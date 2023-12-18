@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+}
+
+/* ********** */
+/* Reused Styles */
+/* ********** */
+
+.col-13 {
+   width: 1200px;
+}
+
+.span-2 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   line-height: 30px;
+   color: #262b2c;
+   font-weight: 500;
+}
+
+.span {
+   font-family: 'Poppins', sans-serif;
+   font-size: 24px;
+   line-height: 30px;
+   color: #262b2c;
+   font-weight: 500;
+}
+
+.orange {
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   letter-spacing: 2px;
+   font-weight: 600;
+   color: #f6aa28;
+}
+
+.tango {
+   font-family: 'Inter', sans-serif;
+   font-size: 14px;
+   padding-bottom: 4px;
+   letter-spacing: 2px;
+   font-weight: 600;
+   text-transform: uppercase;
+   display: inline-block;
+   border-bottom: 2px solid #f6aa28;
+   margin-bottom: 38px;
+   transition: 0.4s ease;
+   cursor: pointer;
+}
+
+.tango:hover {
+   border-bottom: 2px solid #000000;
+}
+
+.h2 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 40px;
+   line-height: 52px;
+   margin-bottom: 20px;
+}
+
+.h4 {
+   font-family: 'Inter', sans-serif;
+   font-size: 18px;
+   line-height: 34px;
+   color: #979a9b;
+   margin-bottom: 20px;
+   font-weight: 600;
+}
+
+.h5 {
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   line-height: 34px;
+   color: #979a9b;
+
+}
+
+.section-p1 {
+   padding: 96px 0;
+}
+
+button.normal {
+   font-family: 'Inter', sans-serif;
+   padding: 18px 30px;
+   font-size: 14px;
+   line-height: 14px;
+   letter-spacing: 2px;
+   font-weight: 700;
+   transition: 0.3s ease;
+   border: none;
+   outline: none;
+}
+
+button.normal:hover {
+   background-color: #262b2c;
+   color: white;
+}
+
+button.transparent {
+   font-family: 'Inter', sans-serif;
+   padding: 18px 30px;
+   font-size: 14px;
+   line-height: 14px;
+   letter-spacing: 2px;
+   font-weight: 700;
+   transition: 0.3s ease;
+   border: 2px solid white;
+   color: white;
+   outline: none;
+   background-color: transparent;
+}
+
+button.transparent:hover {
+   background-color: #ffffff;
+   color: rgb(0, 0, 0);
+}
+
+
+#topbar {
+   background-color: #f1f1ef;
+   color: #979a9b;
+}
+
+#topbar div {
+   font-size: 12px;
+}
+
+/* ********** */
+/* Navbar */
+/* ********** */
+
+#menu {
+   z-index: 300 !important;
+}
+
+#menu .menu-items .item {
+   font-size: 14px;
+   cursor: pointer;
+   color: #979a9b;
+   font-weight: 600;
+   transition: 0.3s ease;
+}
+
+#menu .menu-items .item i {
+   color: black;
+   font-size: 22px;
+}
+
+#menu .menu-items .item:hover {
+   color: black;
+}
+
+#menu .menu-items .menu-left .logo {
+   width: 155px !important;
+}
+
+#mobileMenu {
+   transform: translateX(-100%);
+   transition: 0.5s ease;
+   position: absolute;
+   width: 350px;
+   height: 100vh;
+   background-color: rgb(255, 255, 255);
+   top: 0;
+   left: 0;
+}
+
+#mobileMenu.active {
+   transform: translate(0);
+}
+
+#mobileMenu .mobile-nav {
+   padding: 80px 15px;
+   position: relative;
+}
+
+#mobileMenu .mobile-nav .close {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+}
+
+#mobileMenu .mobile-nav .item {
+   font-size: 12px;
+   color: #6e7051;
+}
+
+#mobileMenu .mobile-nav .item .user {
+   font-size: 22px;
+   color: black;
+}
+
+.search i {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   line-height: 13px;
+   padding: 0 16px;
+   background-color: #6e7051;
+   color: white;
+}
+
+/* ********** */
+/* Hero */
+/* ********** */
+
+#hero {
+   height: 125vh;
+   background-image: url('https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-hero-image-bg.jpg');
+   background-position: center;
+   background-size: cover;
+   font-family: 'Poppins', sans-serif;
+   padding: 48px 56px 0 0;
+}
+
+#hero h2 {
+   font-size: 70px;
+}
+
+#hero p {
+   font-size: 18px;
+}
+
+/* ********** */
+/* About Us */
+/* ********** */
+
+.about-img {
+   padding: 80px 80px 80px 64px;
+}
+
+.about-img p {
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   letter-spacing: 2px;
+   font-weight: 600;
+   color: #f6aa28;
+   margin-bottom: 28px;
+}
+
+.about-img div {
+   font-family: 'Inter', sans-serif;
+   font-size: 14px;
+   padding-bottom: 4px;
+   letter-spacing: 2px;
+   font-weight: 600;
+   text-transform: uppercase;
+   display: inline-block;
+   border-bottom: 2px solid #f6aa28;
+   margin-bottom: 38px;
+   transition: 0.4s ease;
+   cursor: pointer;
+}
+
+.about-img div:hover {
+   border-bottom: 2px solid #000000;
+
+}
+
+.logos {
+   flex-wrap: wrap;
+}
+
+/* ********** */
+/* Shoe */
+/* ********** */
+
+#shoe {
+   background-color: #f1f1ef;
+}
+
+#shoe .shoe-left {
+   padding-right: 56px;
+}
+
+.loka {
+   padding-bottom: 80px;
+}
+
+#shoe .shoe-right {
+   padding-left: 56px;
+}
+
+.boom {
+   height: 100vh;
+}
+
+/* ********** */
+/* Our Best Seller  */
+/* ********** */
+
+#bestSellerContainer,
+#menContainer,
+#womenContainer,
+#saleContainer,
+#newArrivalContainer {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+#bestSellerContainer .product .image:hover .quick,
+#menContainer .product .image:hover .quick,
+#womenContainer .product .image:hover .quick,
+#saleContainer .product .image:hover .quick,
+#newArrivalContainer .product .image:hover .quick {
+   opacity: 1;
+   transition: 0.6s ease;
+}
+
+.quick {
+   opacity: 0;
+   background-color: #000000a1;
+   color: white;
+   transition: 0.3s ease;
+}
+
+.quick:hover {
+   background-color: #000000c7;
+}
+
+#bestSellerContainer .product .image .sale,
+#menContainer .product .image .sale,
+#womenContainer .product .image .sale,
+#saleContainer .product .image .sale,
+#newArrivalContainer .product .image .sale {
+
+   top: -10px;
+   right: -10px;
+   border-radius: 50%;
+   padding: 10px 7px;
+   background-color: #6e7051;
+   color: #fff;
+}
+
+#bestSellerContainer .product .name,
+#menContainer .product .name,
+#womenContainer .product .name,
+#saleContainer .product .name,
+#newArrivalContainer .product .name {
+   margin-bottom: 0;
+   margin-top: 40px;
+   color: #000000;
+}
+
+#bestSellerContainer .product .price,
+#menContainer .product .price,
+#womenContainer .product .price,
+#saleContainer .product .price,
+#newArrivalContainer .product .price {
+   color: #979a9b;
+   gap: 10px;
+   font-weight: 700;
+}
+
+#bestSellerContainer .product .price .discount,
+#menContainer .product .price .discount,
+#womenContainer .product .price .discount,
+#saleContainer .product .price .discount,
+#newArrivalContainer .product .price .discount {
+   text-decoration: line-through;
+}
+
+#bestSellerContainer .product .ratings,
+#menContainer .product .ratings,
+#womenContainer .product .ratings,
+#saleContainer .product .ratings,
+#newArrivalContainer .product .ratings {
+   color: #979a9b;
+}
+
+
+/* ********** */
+/* Shopping  */
+/* ********** */
+
+.shopping {
+   gap: 30px;
+   height: 600px;
+}
+
+.shopping .men {
+   background-image: url('https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-shop-men-image-thumbnail.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+.shopping .women {
+   background-image: url('https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-shop-women-image-tumbnail.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+/* ********** */
+/* veg  */
+/* ********** */
+
+.veggie {
+   background-color: #f1f1ef;
+}
+
+.veg {
+   flex-wrap: wrap;
+}
+
+.veg-left {
+   padding-right: 128px;
+   order: 1;
+}
+
+
+.veg-right {
+   order: 2;
+}
+
+.veg-right img {
+   border-radius: 50%;
+   border: 2px dashed rgba(0, 0, 0, 0.347);
+}
+
+/* ********** */
+/* Reviews */
+/* ********** */
+
+.customers {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+.yellow i {
+   color: #f6aa28;
+}
+
+.user img {
+   border-radius: 50%;
+}
+
+.user div {
+   color: #6e7051;
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+/* ********** */
+/* Better  */
+/* ********** */
+
+.better {
+   background-image: url('https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-cta-image-bg.jpg');
+   height: 680px;
+   background-position: center;
+   background-size: cover;
+}
+
+.better h1 {
+   font-size: 64px;
+   line-height: 84px;
+   margin-bottom: 20px;
+}
+
+.better .h4 {
+   margin-bottom: 40px;
+}
+
+/* ********** */
+/* Payments  */
+/* ********** */
+
+.payments {
+   gap: 60px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* ********** */
+/* Footer  */
+/* ********** */
+
+footer .foot-links div {
+   padding: 7px 0;
+   color: #6e7051;
+}
+
+.foot-bar {
+   background-color: #f1f1ef;
+   padding: 24px 40px;
+}
+
+
+/* ********** */
+/* media queries  */
+/* ********** */
+
+
+@media (max-width: 1025px) {
+   .h2 {
+      font-size: 32px;
+   }
+
+   .span {
+      font-size: 20px;
+   }
+
+   .h4 {
+      font-size: 16px;
+   }
+
+   .about-us {
+      display: block !important;
+      width: 100%;
+   }
+
+   .about-img {
+      padding: 30px;
+   }
+
+   .section-p1 {
+      padding: 20px;
+   }
+
+   .col-13,
+   .logos {
+      width: 100%;
+   }
+
+   #shoe {
+      padding: 48px 24px 48px 24px;
+   }
+
+   .shoes {
+      width: 100%;
+   }
+
+   .loka {
+      padding-bottom: 40px;
+   }
+
+   .shopping {
+      height: 280px;
+   }
+
+   .customers {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+   }
+}
+
+@media (max-width: 767px) {
+   #menu .menu-items .menu-left {
+      align-items: center;
+   }
+
+   #hero {
+      height: 80vh;
+      padding: 48px 56px 0 0;
+   }
+
+   #hero h2 {
+      font-size: 48px;
+   }
+
+   #hero p {
+      font-size: 18px;
+   }
+
+   #hero button.normal {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 20px;
+   }
+
+   #bestSellerContainer .product .image .sale,
+   #menContainer .product .image .sale,
+   #womenContainer .product .image .sale,
+   #saleContainer .product .image .sale,
+   #newArrivalContainer .product .image .sale {
+      top: -10px;
+      right: -10px;
+      border-radius: 50%;
+      padding: 6px 3px;
+      background-color: #6e7051;
+      color: #fff;
+   }
+
+   .shopping {
+      gap: 10px;
+      display: block !important;
+      height: auto;
+   }
+
+   .shopping .men {
+      height: 250px;
+      margin-bottom: 5px;
+   }
+
+   .shopping .women {
+      height: 250px;
+   }
+
+   .customers {
+      display: block !important;
+   }
+
+   .veg-right {
+      justify-content: center !important;
+      order: 1 !important;
+   }
+
+   .veg-left {
+      order: 2 !important;
+      padding-right: 0;
+   }
+
+   .payments {
+      gap: 0;
+      display: block !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   }
+
+   .better h1 {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 20px;
+   }
+
+   .h4 {
+      font-size: 14px;
+      line-height: 24px;
+   }
+
+}
+
+@media (max-width: 576px) {
+   #menu .menu-items .menu-left .logo {
+      width: 95px !important;
+   }
+
+   #menu .menu-items .item .bars {
+      color: #6e7051;
+   }
+
+   .logos p,
+   .logos img {
+      width: 50% !important;
+   }
+
+   #bestSellerContainer,
+   #menContainer,
+   #womenContainer,
+   #saleContainer,
+   #newArrivalContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      font-size: 12px;
+   }
+
+
+   #bestSellerContainer .product .name,
+   #menContainer .product .name,
+   #womenContainer .product .name,
+   #saleContainer .product .name,
+   #newArrivalContainer .product .name {
+      margin-bottom: 0;
+      margin-top: 0;
+      color: #000000;
+      justify-content: flex-start !important;
+      text-align: left;
+   }
+
+   #bestSellerContainer .product .price,
+   #menContainer .product .price,
+   #womenContainer .product .price,
+   #saleContainer .product .price,
+   #newArrivalContainer .product .price {
+      color: #979a9b;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 12px;
+      justify-content: flex-start !important;
+   }
+
+   #bestSellerContainer .product,
+   #menContainer .product,
+   #womenContainer .product,
+   #saleContainer .product,
+   #newArrivalContainer .product {
+      margin-bottom: 20px;
+   }
+
+   #bestSellerContainer .product .ratings,
+   #menContainer .product .ratings,
+   #womenContainer .product .ratings,
+   #saleContainer .product .ratings,
+   #newArrivalContainer .product .ratings {
+      color: #979a9b;
+      justify-content: flex-start !important;
+   }
+
+   .shopping {
+      display: block !important;
+      height: auto;
+   }
+
+   .customers {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+   }
+}
