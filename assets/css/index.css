@@ -571,7 +571,7 @@ footer .foot-links div {
 
    #hero {
       height: 80vh;
-      padding: 48px 56px 0 0;
+      padding: 10px;
    }
 
    #hero h2 {
@@ -637,6 +637,10 @@ footer .foot-links div {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
    }
 
+   .payments div i {
+      margin-bottom: 10px;
+   }
+
    .better h1 {
       font-size: 32px;
       line-height: 40px;
@@ -648,6 +652,35 @@ footer .foot-links div {
       line-height: 24px;
    }
 
+   .luffy {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .luffy .foot-links {
+      padding: 0 !important;
+      width: 100%;
+      text-align: center;
+   }
+
+   .social {
+      display: flex;
+      justify-content: center;
+   }
+
+   .foot-bar {
+      display: block !important;
+      text-align: center;
+   }
+
+   .foot-bar .foot-images {
+      justify-content: center !important;
+   }
+
+   .better {
+      height: 320px;
+   }
+
 }
 
 @media (max-width: 576px) {
@@ -657,6 +690,22 @@ footer .foot-links div {
 
    #menu .menu-items .item .bars {
       color: #6e7051;
+   }
+
+   #hero {
+      height: 75vh;
+      padding: 10px;
+   }
+
+   #hero h2 {
+      margin-top: 70px;
+      text-align: center;
+   }
+
+   #hero p {
+      margin: 50px 0 !important;
+      font-size: 14px;
+      text-align: center;
    }
 
    .logos p,
