@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
    const bestSellerProducts = products.filter(product => product.category == 'bestseller');
    const newArrivalProducts = products.filter(product => product.category == 'new');
 
-   const menContainer = document.querySelector('#menContainer');
-   const womenContainer = document.querySelector('#womenContainer');
-   const saleContainer = document.querySelector('#saleContainer');
-   const bestSellerContainer = document.querySelector('#bestSellerContainer');
-   const newArrivalContainer = document.querySelector('#newArrivalContainer');
+   const menContainer = document.querySelector('#menContainer .pro-container');
+   const womenContainer = document.querySelector('#womenContainer .pro-container');
+   const saleContainer = document.querySelector('#saleContainer .pro-container');
+   const bestSellerContainer = document.querySelector('#bestSellerContainer .pro-container');
+   const newArrivalContainer = document.querySelector('#newArrivalContainer .pro-container');
 
 
    function renderProducts(container, products) {
@@ -43,26 +43,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products.forEach(product => {
          innerHTML += `
-            <div class="product text-center">
-               <div class="image position-relative">
-                  <img class="img-fluid" src="${product.image}" alt="">
-                  ${product.sale !== null ? `<div class="sale position-absolute h4">${product.sale}</div>` : ''}
-                  <div class="position-absolute bottom-0 py-2 text-center quick w-100">Quick view</div>
+         <div class="pro position-relative">
+            <img src="${product.image}">
+         <div class="des">
+               <span>${product.type}</span>
+               <h5>${product.name}</h5>
+               <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                </div>
-               <div class="name h4">${product.name}</div>
-               <div class="price mb-2 d-flex justify-content-center">
-                     <div class="discount">${product.price.discounted !== null ? product.price.discounted : ''}</div>
-                     <div>${product.price.original}</div>
+               <div class="d-flex price position-absolute align-items-center">
+                  <h4 class="me-2 fs-6">${product.price.original}</h4>
+                  <h4 class="discount">${product.price.discounted !== null ? product.price.discounted : ''}</h4>
                </div>
                
-               <div class="ratings d-flex justify-content-center">
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-               </div>
-            </div>
+         </div>
+         ${product.sale !== null ? `<div class="sale position-absolute">${product.sale}</div> ` : '' }
+         
+      </div>
          `;
       });
       container.innerHTML = innerHTML;
@@ -94,8 +95,5 @@ document.addEventListener("DOMContentLoaded", function () {
    Promise.resolve()
       .then(() => renderPromise(newArrivalContainer, newArrivalProducts))
       .catch((error) => console.error(error));
-
-
-
 
 });
