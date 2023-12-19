@@ -11,6 +11,12 @@ body {
    padding: 50px;
 }
 
+#menContainer .pro-container,
+#womenContainer .pro-container,
+#joggerContainer .pro-container {
+   padding: 20px 120px !important;
+}
+
 .men-items .men .h1 {
    color: #6e7051;
    font-size: 72px;
@@ -26,4 +32,58 @@ body {
 
 .men-items button.normal:hover {
    background-color: #262b2c;
+}
+
+#womenContainer .pro img {
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   object-position: top;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+
+@media (max-width: 1025px) {}
+
+
+@media (max-width: 767px) {}
+
+
+@media (max-width: 576px) {
+   .men-items .men {
+      padding: 0;
+   }
+
+   .men-items .men .h1 {
+      margin-bottom: 46px;
+   }
+
+   #footer {
+      padding: 20px;
+   }
+
+   #bestSellerContainer .pro,
+   #menContainer .pro,
+   #womenContainer .pro,
+   #saleContainer .pro,
+   #newArrivalContainer .pro,
+   #joggerContainer .pro {
+      margin: 5px 0;
+   }
+
+   #womenContainer .pro img {
+      width: 100%;
+      height: 151px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 20px;
+      cursor: pointer;
+   }
+
+   #menContainer .pro-container,
+   #womenContainer .pro-container,
+   #joggerContainer .pro-container {
+      padding: 20px !important;
+   }
 }

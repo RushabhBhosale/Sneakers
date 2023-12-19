@@ -149,8 +149,9 @@ button.transparent:hover {
 /* ********** */
 
 #menu {
-   z-index: 300 !important;
+   z-index: 100 !important;
    background-color: white;
+   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 #menu .menu-items .item {
@@ -177,12 +178,13 @@ button.transparent:hover {
 #mobileMenu {
    transform: translateX(-100%);
    transition: 0.5s ease;
-   position: absolute;
+   position: fixed;
    width: 350px;
    height: 100vh;
    background-color: rgb(255, 255, 255);
    top: 0;
    left: 0;
+   z-index: 400;
 }
 
 #mobileMenu.active {
@@ -230,7 +232,7 @@ button.transparent:hover {
 }
 
 #hero {
-   height: calc(100vh - 112px);
+   height: 100vh;
    width: 200%;
 }
 
@@ -293,6 +295,19 @@ button.transparent:hover {
    background-color: #d9d9d9;
 }
 
+/* ********** */
+/* Category */
+/* ********** */
+
+#category .cate-pro a div {
+   padding: 10px 0;
+   font-size: 24px;
+   margin-top: 40px;
+   line-height: 30px;
+   border: 2px solid black;
+   flex-wrap: wrap !important;
+}
+
 
 
 
@@ -337,10 +352,6 @@ button.transparent:hover {
 
 }
 
-.logos {
-   flex-wrap: wrap;
-}
-
 /* ********** */
 /* Shoe */
 /* ********** */
@@ -373,7 +384,11 @@ button.transparent:hover {
 #menContainer,
 #womenContainer,
 #saleContainer,
-#newArrivalContainer {
+#newArrivalContainer,
+#hoodieContainer,
+#kurtiContainer,
+#joggerContainer,
+#shoesContainer {
    text-align: center;
 }
 
@@ -381,8 +396,13 @@ button.transparent:hover {
 #menContainer .pro-container,
 #womenContainer .pro-container,
 #saleContainer .pro-container,
-#newArrivalContainer .pro-container {
+#newArrivalContainer .pro-container,
+#hoodieContainer .pro-container,
+#kurtiContainer .pro-container,
+#joggerContainer .pro-container,
+#shoesContainer .pro-container {
    display: flex;
+   grid-template-columns: repeat(4, 1fr);
    padding-top: 20px;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -392,7 +412,11 @@ button.transparent:hover {
 #menContainer .pro,
 #womenContainer .pro,
 #saleContainer .pro,
-#newArrivalContainer .pro {
+#newArrivalContainer .pro,
+#hoodieContainer .pro,
+#kurtiContainer .pro,
+#joggerContainer .pro,
+#shoesContainer .pro {
    width: 23%;
    min-width: 250px;
    height: 380px;
@@ -409,7 +433,11 @@ button.transparent:hover {
 #menContainer .pro .des,
 #womenContainer .pro .des,
 #saleContainer .pro .des,
-#newArrivalContainer .pro .des {
+#newArrivalContainer .pro .des,
+#hoodieContainer .pro .des,
+#kurtiContainer .pro .des,
+#joggerContainer .pro .des,
+#shoesContainer .pro .des {
    text-align: start;
    padding: 10px 0;
 }
@@ -418,7 +446,11 @@ button.transparent:hover {
 #menContainer .pro .des span,
 #womenContainer .pro .des span,
 #saleContainer .pro .des span,
-#newArrivalContainer .pro .des span {
+#newArrivalContainer .pro .des span,
+#hoodieContainer .pro .des span,
+#kurtiContainer .pro .des span,
+#joggerContainer .pro .des span,
+#shoesContainer .pro .des span {
    color: #606063;
    font-size: 12px;
 }
@@ -427,7 +459,11 @@ button.transparent:hover {
 #menContainer .pro .des h5,
 #womenContainer .pro .des h5,
 #saleContainer .pro .des h5,
-#newArrivalContainer .pro .des h5 {
+#newArrivalContainer .pro .des h5,
+#hoodieContainer .pro .des h5,
+#kurtiContainer .pro .des h5,
+#joggerContainer .pro .des h5,
+#shoesContainer .pro .des h5 {
    color: #1a1a1a;
    padding-top: 7px;
    font-size: 14px;
@@ -437,7 +473,11 @@ button.transparent:hover {
 #menContainer .pro .des i,
 #womenContainer .pro .des i,
 #saleContainer .pro .des i,
-#newArrivalContainer .pro .des i {
+#newArrivalContainer .pro .des i,
+#hoodieContainer .pro .des i,
+#kurtiContainer .pro .des i,
+#joggerContainer .pro .des i,
+#shoesContainer .pro .des i {
    color: rgb(243, 181, 25);
    font-size: 12px;
 }
@@ -446,7 +486,11 @@ button.transparent:hover {
 #menContainer .pro .des .star,
 #womenContainer .pro .des .star,
 #saleContainer .pro .des .star,
-#newArrivalContainer .pro .des .star {
+#newArrivalContainer .pro .des .star,
+#hoodieContainer .pro .des .star,
+#kurtiContainer .pro .des .star,
+#joggerContainer .pro .des .star,
+#shoesContainer .pro .des .star {
    position: absolute;
    bottom: 37px;
 }
@@ -455,7 +499,11 @@ button.transparent:hover {
 #menContainer .pro .des .price .discount,
 #womenContainer .pro .des .price .discount,
 #saleContainer .pro .des .price .discount,
-#newArrivalContainer .pro .des .price .discount {
+#newArrivalContainer .pro .des .price .discount,
+#hoodieContainer .pro .des .price .discount,
+#kurtiContainer .pro .des .price .discount,
+#joggerContainer .pro .des .price .discount,
+#shoesContainer .pro .des .price .discount {
    font-size: 12px;
    color: #606063a5;
    text-decoration: line-through;
@@ -469,7 +517,11 @@ button.transparent:hover {
 #menContainer .pro .sale,
 #womenContainer .pro .sale,
 #saleContainer .pro .sale,
-#newArrivalContainer .pro .sale {
+#newArrivalContainer .pro .sale,
+#hoodieContainer .pro .sale,
+#kurtiContainer .pro .sale,
+#joggerContainer .pro .sale,
+#shoesContainer .pro .sale {
    top: -10px;
    right: -10px;
    border-radius: 50%;
@@ -482,7 +534,11 @@ button.transparent:hover {
 #menContainer .pro .des h4,
 #womenContainer .pro .des h4,
 #saleContainer .pro .des h4,
-#newArrivalContainer .pro .des h4 {
+#newArrivalContainer .pro .des h4,
+#hoodieContainer .pro .des h4,
+#kurtiContainer .pro .des h4,
+#joggerContainer .pro .des h4,
+#shoesContainer .pro .des h4 {
    color: #088178;
    padding-top: 7px;
    font-size: 15px;
@@ -494,7 +550,11 @@ button.transparent:hover {
 #menContainer .pro:hover,
 #womenContainer .pro:hover,
 #saleContainer .pro:hover,
-#newArrivalContainer .pro:hover {
+#newArrivalContainer .pro:hover,
+#hoodieContainer .pro:hover,
+#kurtiContainer .pro:hover,
+#joggerContainer .pro:hover,
+#shoesContainer .pro:hover {
    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -502,7 +562,11 @@ button.transparent:hover {
 #menContainer .pro img,
 #womenContainer .pro img,
 #saleContainer .pro img,
-#newArrivalContainer .pro img {
+#newArrivalContainer .pro img,
+#hoodieContainer .pro img,
+#kurtiContainer .pro img,
+#joggerContainer .pro img,
+#shoesContainer .pro img {
    width: 100%;
    height: 250px;
    object-fit: cover;
@@ -514,7 +578,11 @@ button.transparent:hover {
 #menContainer .pro .cart,
 #womenContainer .pro .cart,
 #saleContainer .pro .cart,
-#newArrivalContainer .pro .cart {
+#newArrivalContainer .pro .cart,
+#hoodieContainer .pro .cart,
+#kurtiContainer .pro .cart,
+#joggerContainer .pro .cart,
+#shoesContainer .pro .cart {
    color: #088178;
    background-color: #e8f6ea;
    width: 40px;
@@ -527,6 +595,7 @@ button.transparent:hover {
    right: 20px;
    cursor: pointer;
 }
+
 
 
 /* ***************** */
@@ -734,75 +803,9 @@ button.transparent:hover {
 /* ******************* */
 
 #footer {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
+   padding: 0 80px;
 }
 
-#footer .col {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-}
-
-#footer .logo {
-   margin-bottom: 30px;
-}
-
-#footer h4 {
-   font-size: 20px;
-   padding-bottom: 20px;
-}
-
-.contact {
-   padding-bottom: 0 !important;
-}
-
-#footer p {
-   font-size: 16px;
-   margin-bottom: 8px;
-}
-
-#footer a {
-   font-size: 16px;
-   text-decoration: none;
-   color: #222;
-   margin-bottom: 10px;
-}
-
-#footer .follow {
-   margin-bottom: 20px;
-}
-
-#footer .follow i {
-   color: #222;
-   padding-right: 4px;
-   cursor: pointer;
-}
-
-.install p {
-   margin-top: 0;
-}
-
-#footer .install .row img {
-   border: 1px solid #088178;
-   border-radius: 6px;
-   margin-right: 5px;
-}
-
-#footer .install img {
-   margin: 10px 0 15px 0;
-}
-
-#footer .follow i:hover,
-#footer a:hover {
-   color: #088178;
-}
-
-#footer .copyright {
-   width: 100%;
-   text-align: center;
-}
 
 /* ********** */
 /* Shopping  */
@@ -930,8 +933,7 @@ footer .foot-links div {
       padding: 20px;
    }
 
-   .col-13,
-   .logos {
+   .col-13 {
       width: 100%;
    }
 
@@ -985,7 +987,13 @@ footer .foot-links div {
 
    #featuredProducts .pro-container,
    #newArrivals .pro-container,
-   #relatedProducts .pro-container {
+   #relatedProducts .pro-container,
+   #menProducts .pro-container,
+   #womenProducts .pro-container,
+   #hoodieContainer .pro-container,
+   #kurtiContainer .pro-container,
+   #joggerContainer .pro-container,
+   #shoesContainer .pro-container {
       justify-content: center;
    }
 
@@ -1114,6 +1122,10 @@ footer .foot-links div {
       text-align: center;
    }
 
+   #category .cate-pro a div {
+      margin-top: 20px;
+   }
+
    .about-us img {
       height: 300px;
       object-fit: contain;
@@ -1125,90 +1137,137 @@ footer .foot-links div {
       line-height: 30px;
    }
 
-   .logos p,
-   .logos img {
-      width: 50% !important;
-   }
-
    #bestSellerContainer .pro,
-   #menContainer .pro,
-   #womenContainer .pro,
-   #saleContainer .pro,
-   #newArrivalContainer .pro {
-      width: 23%;
-      min-width: 250px;
-      height: 300px;
-      padding: 10px 12px;
-      border: 1px solid #cce7d0;
-      box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-      margin: 15px 0;
-      transition: 0.2s ease;
-      position: relative;
-      border-radius: 20px;
-   }
+#menContainer .pro,
+#womenContainer .pro,
+#saleContainer .pro,
+#newArrivalContainer .pro,
+#hoodieContainer .pro,
+#kurtiContainer .pro,
+#joggerContainer .pro,
+#shoesContainer .pro {
+   width: 23%;
+   min-width: 250px;
+   height: 300px;
+   padding: 10px 12px;
+   border: 1px solid #cce7d0;
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+   margin: 15px 0;
+   transition: 0.2s ease;
+   position: relative;
+   border-radius: 20px;
+}
 
-   #featuredProducts .pro-container,
-   #newArrivals .pro-container,
-   #relatedProducts .pro-container {
-      justify-content: space-between;
-   }
+#bestSellerContainer .pro-container,
+#menContainer .pro-container,
+#womenContainer .pro-container,
+#saleContainer .pro-container,
+#newArrivalContainer .pro-container,
+#hoodieContainer .pro-container,
+#kurtiContainer .pro-container,
+#joggerContainer .pro-container,
+#shoesContainer .pro-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
 
-   #featuredProducts,
-   #newArrivals,
-   #relatedProducts {
-      padding: 10px;
-   }
+#featuredProducts .pro-container,
+#newArrivals .pro-container,
+#relatedProducts .pro-container,
+#menProducts .pro-container,
+#womenProducts.pro-container,
+#hoodieContainer .pro-container,
+#kurtiContainer .pro-container,
+#joggerContainer .pro-container,
+#shoesContainer .pro-container {
+   justify-content: space-between;
+}
 
-   #featuredProducts .pro,
-   #newArrivals .pro,
-   #relatedProducts .pro {
-      margin: 5px;
-      min-width: 176px;
-      padding: 10px 12px;
-      margin: 5px;
-   }
+#featuredProducts,
+#newArrivals,
+#relatedProducts,
+#menProducts .pro-container,
+#womenProducts .pro-container,
+#hoodieContainer,
+#kurtiContainer,
+#joggerContainer,
+#shoesContainer {
+   padding: 10px;
+}
 
-   #bestSellerContainer,
-   #menContainer,
-   #womenContainer,
-   #saleContainer,
-   #newArrivalContainer {
-      text-align: center;
-      padding: 0;
-   }
+#featuredProducts .pro,
+#newArrivals .pro,
+#relatedProducts .pro,
+#menProducts .pro,
+#womenPeoducts .pro,
+#hoodieContainer .pro,
+#kurtiContainer .pro,
+#joggerContainer .pro,
+#shoesContainer .pro {
+   margin: 5px;
+   min-width: 176px;
+   padding: 10px 12px;
+   margin: 5px;
+}
 
-   #bestSellerContainer .pro,
-   #menContainer .pro,
-   #womenContainer .pro,
-   #saleContainer .pro,
-   #newArrivalContainer .pro {
-      min-width: 172px;
-   }
+#bestSellerContainer,
+#menContainer,
+#womenContainer,
+#saleContainer,
+#newArrivalContainer,
+#hoodieContainer,
+#kurtiContainer,
+#joggerContainer,
+#shoesContainer {
+   text-align: center;
+   padding: 0;
+}
 
-   #bestSellerContainer .pro img,
-   #menContainer .pro img,
-   #womenContainer .pro img,
-   #saleContainer .pro img,
-   #newArrivalContainer .pro img {
-      height: 151px;
-      object-fit: cover;
-      border-radius: 20px;
-      cursor: pointer;
-   }
+#bestSellerContainer .pro,
+#menContainer .pro,
+#womenContainer .pro,
+#saleContainer .pro,
+#newArrivalContainer .pro,
+#hoodieContainer .pro,
+#kurtiContainer .pro,
+#joggerContainer .pro,
+#shoesContainer .pro {
+   min-width: 172px;
+}
 
-   #bestSellerContainer .pro .sale,
-   #menContainer .pro .sale,
-   #womenContainer .pro .sale,
-   #saleContainer .pro .sale,
-   #newArrivalContainer .pro .sale {
-      top: -10px;
-      right: -10px;
-      border-radius: 50%;
-      padding: 6px 2px;
-      background-color: #6e7051;
-      color: #fff;
-      font-size: 12px;
-   }
+#bestSellerContainer .pro img,
+#menContainer .pro img,
+#womenContainer .pro img,
+#saleContainer .pro img,
+#newArrivalContainer .pro img,
+#hoodieContainer .pro img,
+#kurtiContainer .pro img,
+#joggerContainer .pro img,
+#shoesContainer .pro img {
+   height: 151px;
+   object-fit: cover;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+#bestSellerContainer .pro .sale,
+#menContainer .pro .sale,
+#womenContainer .pro .sale,
+#saleContainer .pro .sale,
+#newArrivalContainer .pro .sale,
+#hoodieContainer .pro .sale,
+#kurtiContainer .pro .sale,
+#joggerContainer .pro .sale,
+#shoesContainer .pro .sale {
+   top: -10px;
+   right: -10px;
+   border-radius: 50%;
+   padding: 6px 2px;
+   background-color: #6e7051;
+   color: #fff;
+   font-size: 12px;
+}
+
 
    #banner {
       height: auto;
@@ -1218,7 +1277,7 @@ footer .foot-links div {
       color: white;
       font-size: 24px;
       padding: 10px 0;
-  }
+   }
 
    .shopping {
       display: block !important;

@@ -14,11 +14,13 @@
 
 <body>
 
+   <!-- Topbar -->
    <section id="topbar" class="container-fluid text-center d-none d-lg-block">
       <div class="col-12 mx-auto my-1 py-2">Free Express Shipping on all orders with all duties included</div>
    </section>
 
-   <section id="menu" class="container-fluid px-lg-5 p-0">
+   <!-- Navbar -->
+   <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
       <div class="container-fluid py-md-3 py-2 p-0">
          <div class="d-flex menu-items justify-content-between">
             <div class="item d-md-none px-3" id="menuToggle">
@@ -31,29 +33,42 @@
                         alt="logo"></a>
                </div>
                <div class="d-none d-md-flex">
-                  <div class="item px-3">MEN</div>
-                  <div class="item px-3">WOMEN</div>
-                  <div class="item px-3">COLLECTION</div>
-                  <div class="item px-3">LOOKBOOK</div>
-                  <div class="item px-3">SALE</div>
+                  <a href="men.html">
+                     <div class="item px-3">MEN</div>
+                  </a>
+                  <a href="women.html">
+                     <div class="item px-3">WOMEN</div>
+                  </a>
+                  <a href="shop.html">
+                     <div class="item px-3">COLLECTION</div>
+                  </a>
+                  <a href="blog.html">
+                     <div class="item px-3">LOOKBOOK</div>
+                  </a>
+                  <a href="sale.html">
+                     <div class="item px-3">SALE</div>
+                  </a>
                </div>
             </div>
             <div class="d-flex menu-right justify-content-end">
                <div class="d-none d-lg-flex align-items-center">
-                  <div class="item px-3">OUR STORY</div>
-                  <div class="item px-3">CONTACT</div>
-                  <div class="item px-3">
-                     <i class="p-2 fa-solid fa-user"></i>
-                  </div>
+                  <a href="about.html">
+                     <div class="item px-3">OUR STORY</div>
+                  </a>
+                  <a href="contact.html">
+                     <div class="item px-3">CONTACT</div>
+                  </a>
+                  <a href="login.html">
+                     <div class="item px-3"><i class="p-2 fa-solid fa-user"></i></div>
+                  </a>
                </div>
-               <div class="item px-3">
-                  <i class="p-2 fa-solid fa-bag-shopping"></i>
-               </div>
+               <a href="cart.html">
+                  <div class="item px-3"><i class="p-2 fa-solid fa-bag-shopping"></i></div>
+               </a>
             </div>
          </div>
       </div>
    </section>
-
    <div id="mobileMenu">
       <div class="mobile-nav">
          <div class="close" id="closeMenu">
@@ -83,12 +98,12 @@
       </div>
 
    </div>
-
-   <div class="d-flex d-md-none search justify-content-center my-3">
+   <div class="d-flex pt-5 d-md-none search justify-content-center my-3">
       <input type="text" placeholder="Search for products...">
       <div><i class="fa-solid fa-chevron-right"></i></div>
    </div>
 
+   <!-- Hero -->
    <div id="hero-slider">
       <section id="hero" class="d-flex">
          <div class="slide-1 slides d-flex flex-column justify-content-center align-items-center">
@@ -102,31 +117,30 @@
       </section>
    </div>
 
-   <div class="col-13 logos justify-content-between mx-auto d-flex align-items-center py-5">
-      <p class="mt-3 w-25 text-center">AS SEEN IN:</p>
-      <img
-         src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-featured-in-logo-5.svg"
-         alt="">
-      <img
-         src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-featured-in-logo-4.svg"
-         alt="">
-      <img
-         src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-featured-in-logo-3.svg"
-         alt="">
-      <img
-         src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-featured-in-logo-2.svg"
-         alt="">
-      <img
-         src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-featured-in-logo-1.svg"
-         alt="">
+   <!-- Category -->
+   <div id="category" class="section-p1 pb-0">
+      <div class="h2 text-center">Shop By Category</div>
+      <div class="cate-pro d-block d-md-flex text-center px-lg-5 col-12">
+         <a class="col-12 col-md-6 col-lg-3" href="kurti.html">
+            <div class="mx-4 py-3">Kurti</div>
+         </a>
+         <a class="col-12 col-md-6 col-lg-3" href="jogger.html">
+            <div class="mx-4 py-3">Joggers</div>
+         </a>
+         <a class="col-12 col-md-6 col-lg-3" href="hoodie.html">
+            <div class="mx-4 py-3">Hoodies</div>
+         </a>
+         <a class="col-12 col-md-6 col-lg-3" href="shoes.html">
+            <div class="mx-4 py-3">Shoes</div>
+         </a>
+      </div>
    </div>
 
+   <!-- About Us -->
    <div class="section-p1">
       <div class="col-13 about-us mx-auto d-flex">
          <div class="col-12 col-md-6 d-flex d-lg-block justify-content-center">
-            <img class="img-fluid w-100"
-               src="/assets/images/banner-z/cool.png"
-               alt="" class="img-fluid">
+            <img class="img-fluid w-100" src="/assets/images/banner-z/cool.png" alt="" class="img-fluid">
          </div>
          <div class="col-12 col-md-6 about-img">
             <p>ABOUT US</p>
@@ -140,6 +154,7 @@
       </div>
    </div>
 
+   <!-- Materials -->
    <div id="shoe" class="section-p1">
       <div class="h2 text-center">See how your shoes are made</div>
       <div class="h4 col-12 col-lg-7 text-center mx-auto">Urna, felis enim orci accumsan urna blandit egestas mattis
@@ -180,7 +195,10 @@
       </div>
    </div>
 
+   <!-- Bestseller Products -->
    <div class="col-13 mx-auto section-p1">
+      <!-- <div class="h5 text-center">ALL TIME FAVOURITES</div>
+      <div class="display-4 fw-bold text-center">The Best Sellers</div> -->
       <div class="d-md-flex text-center justify-content-md-between">
          <div class="span">Our Best Seller</div>
          <div class="tango">VIEW ALL BEST SELLERS</div>
@@ -190,12 +208,14 @@
       </div>
    </div>
 
+   <!-- Banner best fashion -->
    <section id="banner" class="section-m1">
-		<h4>Best Fashion Clothing</h4>
-		<h2>Up to <span>70% off</span> - All Clothings & Accessories</h2>
-		<button class="normal">Explore More</button>
-	</section>
+      <h4>Best Fashion Clothing</h4>
+      <h2>Up to <span>70% off</span> - All Clothings & Accessories</h2>
+      <button class="normal">Explore More</button>
+   </section>
 
+   <!-- New Arrival Products -->
    <div class="col-13 mx-auto section-p1">
       <div class="d-md-flex text-center justify-content-md-between">
          <div class="span">New Arrivals</div>
@@ -206,36 +226,39 @@
       </div>
    </div>
 
+   <!-- 2 Banners -->
    <section id="sm-banner" class="section-p1 pt-0 d-none d-lg-flex">
-		<div class="banner-box">
-			<h4>Crazy deals</h4>
-			<h2>Buy 1 Get 1 Free</h2>
-			<span>The best classic dress is on sale at cara</span>
-			<button class="white">Learn More</button>
-		</div>
-		<div class="banner-box banner-box2">
-			<h4>Spring / Summer</h4>
-			<h2>Upcoming Season</h2>
-			<span>The best classic dress is on sale at cara</span>
-			<button class="white">Collection</button>
-		</div>
-	</section>
+      <div class="banner-box">
+         <h4>Crazy deals</h4>
+         <h2>Buy 1 Get 1 Free</h2>
+         <span>The best classic dress is on sale at cara</span>
+         <button class="white">Learn More</button>
+      </div>
+      <div class="banner-box banner-box2">
+         <h4>Spring / Summer</h4>
+         <h2>Upcoming Season</h2>
+         <span>The best classic dress is on sale at cara</span>
+         <button class="white">Collection</button>
+      </div>
+   </section>
 
-	<section id="banner3">
-		<div class="banner-box banner-box1 d-lg-flex d-none">
-			<h2>Sneakers</h2>
-			<h3>Winter Collection - 50% OFF</h3>
-		</div>
-		<div class="banner-box banner-box3 d-lg-flex d-none">
-			<h2>Jeans</h2>
-			<h3>Winter Collection - 50% OFF</h3>
-		</div>
-		<div class="banner-box banner-box2">
-			<h2>Hoodies</h2>
-			<h3>Winter Collection - 50% OFF</h3>
-		</div>
-	</section>
+   <!-- 3 Banners -->
+   <section id="banner3">
+      <div class="banner-box banner-box1 d-lg-flex d-none">
+         <h2>Sneakers</h2>
+         <h3>Winter Collection - 50% OFF</h3>
+      </div>
+      <div class="banner-box banner-box3 d-lg-flex d-none">
+         <h2>Jeans</h2>
+         <h3>Winter Collection - 50% OFF</h3>
+      </div>
+      <div class="banner-box banner-box2">
+         <h2>Hoodies</h2>
+         <h3>Winter Collection - 50% OFF</h3>
+      </div>
+   </section>
 
+   <!-- Reviews -->
    <div class="reviews section-p1">
       <div class="h2 text-center">Our Customers speak for us
       </div>
@@ -298,81 +321,78 @@
       <div class="h4 w-100 text-center">4.8 average rating from 1814 reviews</div>
    </div>
 
+   <!-- Shop Men/Women -->
    <div class="container-fluid p-o better d-flex justify-content-center">
       <div class="justify-content-center align-items-center text-center d-flex flex-column col-12 men">
          <h1 class=" text-white">Better for People & the Planet</h1>
          <div class="h4 text-white">Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate
          </div>
          <div class="d-flex">
-            <button class="normal me-4">SHOP MEN</button>
-            <button class="normal">SHOP WOMEN</button>
+            <a href="men.html"><button class="normal me-4">SHOP MEN</button></a>
+            <a href="women.html"><button class="normal">SHOP WOMEN</button></a>
          </div>
 
       </div>
    </div>
 
-	<section id="newsletter" class="section-m1 d-none d-md-block">
-		<div class="newstext">
-			<h4>Sign Up For Newsletter</h4>
-			<p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
-		</div>
-		<div class="form">
-			<input type="email" placeholder="Your email address">
-			<button class="normal">Sign Up</button>
-		</div>
-	</section>
+   <!-- NewsLetter -->
+   <section id="newsletter" class="section-m1 d-none d-md-flex">
+      <div class="newstext">
+         <h4>Sign Up For Newsletter</h4>
+         <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div class="form">
+         <input type="email" placeholder="Your email address">
+         <button class="normal">Sign Up</button>
+      </div>
+   </section>
 
-	<section id="footer" class="section-p1 d-flex">
-		<div class="col-12 col-md-4">
-			<h4 class="contact">Contact</h4>
-			<p><strong>Address: </strong>Juinagar, Navi Mumbai, Thane, Maharashtra, 400705, India</p>
-			<p><strong>Hours: </strong>10:00 - 20:00</p>
-			<p><strong>Phone: </strong>+91 9137996317</p>
-			<div class="follow">
-				<h4>Follow us</h4>
-				<div class="icons">
-					<i class="fa-brands fa-facebook-f"></i>
-					<i class="fa-brands fa-twitter"></i>
-					<i class="fa-brands fa-instagram"></i>
-					<i class="fa-brands fa-linkedin"></i>
-					<i class="fa-brands fa-pinterest-p"></i>
-				</div>
-			</div>
-		</div>
-		<div class="col-12 col-md-4">
-			<h4>About</h4>
-			<a href="#">About Us</a>
-			<a href="#">Delivery Information</a>
-			<a href="#">Privacy Policy</a>
-			<a href="#">Terms & Conditions</a>
-			<a href="#">Contact Us</a>
-		</div>
-		<div class="col-12 col-md-4">
-			<h4>My Account</h4>
-			<a href="#">Sign In</a>
-			<a href="#">View Cart</a>
-			<a href="#">My Wishlist</a>
-			<a href="#">Track My Order</a>
-			<a href="#">Help</a>
-		</div>
-		<div class="col-12 col-md-4 install">
-			<h4>Install App</h4>
-			<p>From App Store or Google Play</p>
-			<div class="d-flex">
-				<img src="./assets/images/pay/app.jpg">
-				<img src="./assets/images/pay/play.jpg">
-			</div>
-			<p class="w-100 text-center">Secured Payment Gateways </p>
-			<img class="mx-auto" src="./assets/images/pay/pay.png" alt="">
-		</div>
-		<div class="copyright">@2023. Design by Tech2. Developed by Rushabh Bhosale</div>
-	</section>
-
-
-
-
-
-
+   <!-- Footer -->
+   <section id="footer" class="section-p1 d-flex">
+      <div class="col-12 col-md-4">
+         <h4 class="contact">Contact</h4>
+         <p><strong>Address: </strong>Juinagar, Navi Mumbai, Thane, Maharashtra, 400705, India</p>
+         <p><strong>Hours: </strong>10:00 - 20:00</p>
+         <p><strong>Phone: </strong>+91 9137996317</p>
+         <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icons">
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-linkedin"></i>
+               <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-md-4">
+         <h4>About</h4>
+         <a href="#">About Us</a>
+         <a href="#">Delivery Information</a>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Terms & Conditions</a>
+         <a href="#">Contact Us</a>
+      </div>
+      <div class="col-12 col-md-4">
+         <h4>My Account</h4>
+         <a href="#">Sign In</a>
+         <a href="#">View Cart</a>
+         <a href="#">My Wishlist</a>
+         <a href="#">Track My Order</a>
+         <a href="#">Help</a>
+      </div>
+      <div class="col-12 col-md-4 install">
+         <h4>Install App</h4>
+         <p>From App Store or Google Play</p>
+         <div class="d-flex">
+            <img src="./assets/images/pay/app.jpg">
+            <img src="./assets/images/pay/play.jpg">
+         </div>
+         <p>Secured Payment Gateways </p>
+         <img src="./assets/images/pay/pay.png" alt="">
+      </div>
+      <div class="copyright">@2023. Design by Tech2. Developed by Rushabh Bhosale</div>
+   </section>
 
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
