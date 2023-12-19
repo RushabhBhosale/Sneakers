@@ -435,7 +435,6 @@ button.transparent:hover {
    padding: 10px 12px;
    border: 1px solid #cce7d0;
    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-   margin: 15px 0;
    transition: 0.2s ease;
    position: relative;
    border-radius: 20px;
@@ -1164,7 +1163,6 @@ footer .foot-links div {
       padding: 10px 12px;
       border: 1px solid #cce7d0;
       box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-      margin: 15px 0;
       transition: 0.2s ease;
       position: relative;
       border-radius: 20px;
