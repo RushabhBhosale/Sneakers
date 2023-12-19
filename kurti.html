@@ -16,7 +16,7 @@
 <body>
 
    <!-- navbar -->
-   <section id="menu" class="container-fluid px-lg-5 p-0 sticky-top">
+   <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
       <div class="container-fluid py-md-3 py-2 p-0">
          <div class="d-flex menu-items justify-content-between">
             <div class="item d-md-none px-3" id="menuToggle">
@@ -74,22 +74,78 @@
             <a href="login.html"><i class="p-2 user fa-solid fa-user"></i></a>
          </div>
          <div class="item px-3 py-4">
-            <a href="index.html">Home</a>
+            <a class="accordion-header" href="index.html">Home</a>
          </div>
          <div class="item px-3 py-4">
             <a href="shop.html">Shop Everything</a>
          </div>
-         <div class="item px-3 py-4">
-            <a href="blog.html">Lookbook</a>
-         </div>
-         <div class="item px-3 py-4">
-            <a href="sale.html">Sale</a>
-         </div>
-         <div class="item px-3 py-4">
-            <a href="about.html">Story</a>
-         </div>
+         <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Men
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <a href="hoodie.html">Hoodie</a>
+                </div>
+                <div class="accordion-body">
+                  <a href="jogger.html">Joggers</a>
+                </div>
+                <div class="accordion-body">
+                  <a href="shoes.html">Shoes</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Women
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <a href="kurti.html">Kurti</a>
+                </div>
+                <div class="accordion-body">
+                  <a href="shoes.html">Shoes</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  More
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Track My Order
+                </div>
+                <div class="accordion-body">
+                  Returns & Refunds
+                </div>
+                <div class="accordion-body">
+                  Cancellation Policy
+                </div>
+                <div class="accordion-body">
+                  Terms & Conditions
+                </div>
+              </div>
+            </div>
+          </div>
          <div class="item px-3 py-4">
             <a href="contact.html">Contact</a>
+         </div>
+         <div class="item px-3 py-4">
+            <a href="contact.html">Customer Support</a>
+         </div>
+         <div class="item px-3 py-4 d-flex justify-content-around fs-1">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
          </div>
       </div>
 
