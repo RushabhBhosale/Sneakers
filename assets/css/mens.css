@@ -89,6 +89,9 @@ body {
 
    #menContainer .pro-container,
    #womenContainer .pro-container,
+   #joggerContainer .pro-container,
+   #saleContainer .pro-container,
+   #allContainer .pro-container,
    #joggerContainer .pro-container {
       padding: 20px !important;
    }

@@ -15,6 +15,11 @@ body {
    font-family: 'Inter', sans-serif;
 }
 
+.kabum {
+   height: 40px;
+   background-color: transparent;
+}
+
 /* ********** */
 /* Reused Styles */
 /* ********** */
@@ -167,7 +172,12 @@ button.transparent:hover {
    font-size: 22px;
 }
 
-#menu .menu-items .item .main-item {
+#menu .menu-items .item {
+   position: relative;
+   /* Add this to create a stacking context */
+}
+
+#menu .menu-items .item {
    font-size: 18px;
    cursor: pointer;
    color: #979a9b;
@@ -175,8 +185,33 @@ button.transparent:hover {
    transition: 0.3s ease;
 }
 
-#menu .menu-items .item .main-item:hover {
-   color: black;
+#menu .menu-items .item:hover {
+   color: black !important;
+}
+
+#menu .menu-items a {
+   color: #979a9b !important;
+}
+
+#menu .menu-items a:hover {
+   color: black !important;
+}
+
+#menu .menu-items .item .sub-menu {
+   top: 50px;
+   background-color: white;
+   padding: 20px 60px 20px 30px;
+   visibility: hidden;
+   z-index: 1010;
+}
+
+#menu .menu-items .item:hover .sub-menu,
+#menu .menu-items .item .sub-menu:hover {
+   visibility: visible;
+}
+
+#menu .menu-items .item .sub-menu:hover {
+   visibility: visible;
 }
 
 #menu .menu-items .menu-left .logo {
@@ -1029,7 +1064,8 @@ footer .foot-links div {
    #kurtiContainer .pro-container,
    #joggerContainer .pro-container,
    #shoesContainer .pro-container,
-   #allContainer .pro-container {
+   #allContainer .pro-container,
+   #saleContainer .pro-container {
       justify-content: center;
    }
 
@@ -1136,7 +1172,7 @@ footer .foot-links div {
    }
 
    #hero {
-      height: 75vh;
+      height: 90vh;
    }
 
    #hero .slide-1 {
@@ -1304,4 +1340,13 @@ footer .foot-links div {
       color: #fff;
       font-size: 12px;
    }
+
+   .better {
+      height: 320px;
+      margin-top: 40px;
+  }
+
+  .item .bars {
+   margin-top: 11px;
+  }
 }

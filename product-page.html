@@ -22,7 +22,7 @@
 
    <!-- Navbar -->
    <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
-      <div class="container-fluid py-md-3 py-2 p-0">
+      <div class="container-fluid py-md-2 py-2">
          <div class="d-flex menu-items justify-content-between">
             <div class="item d-md-none px-3" id="menuToggle">
                <i class="p-2 bars fa-solid fa-bars"></i>
@@ -35,36 +35,48 @@
                </div>
                <div class="d-none d-md-flex">
                   <a href="men.html">
-                     <div class="item px-3">MEN</div>
+                     <div class="item p-3 position-relative">
+                        MEN <ul class="position-absolute sub-menu">
+                           <li><a class="fs-6 py-2" href="jogger.html">Joggers</a></li>
+                           <li><a class="fs-6 py-2" href="hoodie.html">Hoodies</a></li>
+                           <li><a class="fs-6 py-2" href="men.html">Shirts</a></li>
+                           <li><a class="fs-6 py-2" href="shoes.html">Shoes</a></li>
+                        </ul>
+                     </div>
                   </a>
                   <a href="women.html">
-                     <div class="item px-3">WOMEN</div>
+                     <div class="item p-3 position-relative">
+                        WOMEN <ul class="position-absolute sub-menu">
+                           <li><a class="fs-6 py-2" href="kurti.html">Kurti</a></li>
+                           <li><a class="fs-6 py-2" href="shoes.html">Shoes</a></li>
+                        </ul>
+                     </div>
                   </a>
                   <a href="shop.html">
-                     <div class="item px-3">COLLECTION</div>
+                     <div class="item p-3">COLLECTION</div>
                   </a>
                   <a href="blog.html">
-                     <div class="item px-3">LOOKBOOK</div>
+                     <div class="item p-3">LOOKBOOK</div>
                   </a>
                   <a href="sale.html">
-                     <div class="item px-3">SALE</div>
+                     <div class="item p-3">SALE</div>
                   </a>
                </div>
             </div>
             <div class="d-flex menu-right justify-content-end">
                <div class="d-none d-lg-flex align-items-center">
                   <a href="about.html">
-                     <div class="item px-3">OUR STORY</div>
+                     <div class="item p-3">OUR STORY</div>
                   </a>
                   <a href="contact.html">
-                     <div class="item px-3">CONTACT</div>
+                     <div class="item p-3">CONTACT</div>
                   </a>
                   <a href="login.html">
-                     <div class="item px-3"><i class="p-2 fa-solid fa-user"></i></div>
+                     <div class="item p-3"><i class="p-2 fa-solid fa-user"></i></div>
                   </a>
                </div>
                <a href="cart.html">
-                  <div class="item px-3"><i class="p-2 fa-solid fa-bag-shopping"></i></div>
+                  <div class="item p-3"><i class="p-1 fa-solid fa-bag-shopping"></i></div>
                </a>
             </div>
          </div>
@@ -160,10 +172,6 @@
          </div>
       </div>
 
-   </div>
-   <div class="d-flex pt-5 d-md-none search justify-content-center my-3">
-      <input type="text" placeholder="Search for products...">
-      <div><i class="fa-solid fa-chevron-right"></i></div>
    </div>
 
    <p class="d-none">Product ID: <span id="productId"></span></p>
