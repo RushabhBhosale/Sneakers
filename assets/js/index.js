@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="pro position-relative" onclick="redirectToProduct('${product.name}', '${product.type}', '${product.price.original !== null ? product.price.original : `${product.price.discounted}`}', '${imagePath}', '${product.id}')">
                <img class="img-fluid" src="${product.image}">
                <div class="des">
-                  <span>${product.type} ${product.id}</span>
+                  <span>${product.type}</span>
                   <h5>${product.name}</h5>
                   <div class="star">
                      <i class="fa-solid fa-star"></i>

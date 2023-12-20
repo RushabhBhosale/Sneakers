@@ -12,7 +12,7 @@ const products = [
          original: "$434"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 2,
@@ -58,7 +58,7 @@ const products = [
          original: "$549"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 5,
@@ -89,7 +89,7 @@ const products = [
          original: "$544"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 7,
@@ -104,7 +104,7 @@ const products = [
          original: "$449"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 8,
@@ -120,7 +120,7 @@ const products = [
       },
       category: "bestseller",
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 9,
@@ -136,7 +136,7 @@ const products = [
       },
       category: "bestseller",
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 10,
@@ -151,7 +151,7 @@ const products = [
          original: "$279"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 11,
@@ -166,7 +166,7 @@ const products = [
          original: "$369"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 12,
@@ -181,7 +181,7 @@ const products = [
          original: "$349"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 13,
@@ -196,7 +196,7 @@ const products = [
          original: "$499"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 14,
@@ -211,7 +211,7 @@ const products = [
          original: "$399"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 15,
@@ -226,7 +226,7 @@ const products = [
          original: "$429"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 16,
@@ -286,7 +286,7 @@ const products = [
          original: "$363"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 20,
@@ -301,7 +301,7 @@ const products = [
          original: "$499"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 21,
@@ -316,7 +316,7 @@ const products = [
          original: "$599"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 22,
@@ -331,7 +331,7 @@ const products = [
          original: "$349"
       },
       sale: "Sale!",
-      type: "kurti"
+      type: "Kurti"
    },
    {
       id: 23,
@@ -532,7 +532,7 @@ const products = [
       },
       sale: "sale!",
       gender: "Women",
-      type: "kurti",
+      type: "Kurti",
    },
    {
       id: 36,
