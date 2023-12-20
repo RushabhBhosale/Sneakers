@@ -4,7 +4,7 @@ const products = [
       rating: 4.5,
       popularity: 4,
       date: 10,
-      image: "/assets/images/products/KALINI.jpg",
+      image: "/assets/images/products/1.jpg",
       gender: "Women",
       name: "KALINI",
       price: {
@@ -424,7 +424,7 @@ const products = [
       gender: "Men",
       type: "Shoes",
    },
-   
+
    {
       id: 29,
       name: "Slate Grey Sweatpant",
@@ -532,7 +532,7 @@ const products = [
       },
       sale: "sale!",
       gender: "Women",
-      type: "Shoes",
+      type: "kurti",
    },
    {
       id: 36,
@@ -933,6 +933,146 @@ const products = [
       },
       sale: null
    },
+   {
+      id: 62,
+      image: "assets/images/products/nike.jpg",
+      name: "Nike Pro",
+      type: "Shirts",
+      ratings: 1,
+      popularity: 9,
+      date: 3,
+      price: {
+        original: null,
+        discounted: "$85"
+      },
+      sale: null
+    },
+    {
+      id: 63,
+      image: "assets/images/products/adidas.jpg",
+      name: "Adidas Boost",
+      type: "Shirts",
+      ratings: 5,
+      popularity: 10,
+      date: 2,
+      price: {
+        original: null,
+        discounted: "$120"
+      },
+      sale: null
+    },
+    {
+      id: 64,
+      image: "assets/images/products/puma.jpg",
+      name: "Puma Ignite",
+      type: "Shirts",
+      ratings: 2,
+      popularity: 9,
+      date: 10,
+      price: {
+        original: null,
+        discounted: "$95"
+      },
+      sale: null
+    },
+    {
+      id: 65,
+      image: "assets/images/products/under armour.jpg",
+      name: "Under Armour HeatGear",
+      type: "Shirts",
+      ratings: 1,
+      popularity: 8,
+      date: 9,
+      price: {
+        original: null,
+        discounted: "$80"
+      },
+      sale: null
+    },
+    {
+      id: 66,
+      image: "assets/images/products/reebok.jpg",
+      name: "Reebok Nano",
+      type: "Shirts",
+      ratings: 3,
+      popularity: 8,
+      date: 1,
+      price: {
+        original: null,
+        discounted: "$110"
+      },
+      sale: null
+    },
+    {
+      id: 67,
+      image: "assets/images/products/new balance.jpg",
+      name: "New Balance 990",
+      type: "Shirts",
+      ratings: 4,
+      popularity: 10,
+      date: 9,
+      price: {
+        original: null,
+        discounted: "$130"
+      },
+      sale: null
+    },
+    {
+      id: 68,
+      image: "assets/images/products/converse.jpg",
+      name: "Converse Chuck Taylor",
+      type: "Shirts",
+      ratings: 3,
+      popularity: 10,
+      date: 7,
+      price: {
+        original: null,
+        discounted: "$55"
+      },
+      sale: null
+    },
+    {
+      id: 69,
+      image: "assets/images/products/vans.jpg",
+      name: "Vans Old Skool",
+      type: "Shirts",
+      ratings: 1,
+      popularity: 10,
+      date: 7,
+      price: {
+        original: null,
+        discounted: "$65"
+      },
+      sale: null
+    },
+    {
+      id: 70,
+      image: "assets/images/products/levi.jpg",
+      name: "Levi's Denim Jacket",
+      type: "Shirts",
+      ratings: 1,
+      popularity: 10,
+      date: 10,
+      price: {
+        original: null,
+        discounted: "$90"
+      },
+      sale: null
+    },
+    {
+      id: 71,
+      image: "assets/images/products/gucci.jpg",
+      name: "Gucci Loafers",
+      type: "Shirts",
+      ratings: 5,
+      popularity: 10,
+      date: 5,
+      price: {
+        original: null,
+        discounted: "$550"
+      },
+      sale: null
+    },
 
 ];
 

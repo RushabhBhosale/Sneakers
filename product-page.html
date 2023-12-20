@@ -9,6 +9,7 @@
    <title>Document</title>
    <link rel="stylesheet" href="assets/css/index.css">
    <link rel="stylesheet" href="assets/css/nnn.css">
+   <link rel="stylesheet" href="assets/css/product.css">
    <script src="https://kit.fontawesome.com/0926a5a74f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -165,27 +166,80 @@
       <div><i class="fa-solid fa-chevron-right"></i></div>
    </div>
 
-   <!-- Hero -->
-   <div id="hero-slider">
-      <section id="hero" class="d-flex">
-         <div class="slide-1 slides d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-white display-4 fw-bold">365 OUTSHIRT</h1>
-            <button class="hero-btn">Shop Now</button>
+   <p class="d-none">Product ID: <span id="productId"></span></p>
+   <p class="d-none">Title: <span id="title"></span></p>
+
+   <!-- Product Details -->
+   <section id="prodetails" class="section-p1 p-4">
+      <div class="single-pro-image">
+         <img src="" width="100%" class="productImage" alt="Product Image">
+         <div class="small-img-group">
+            <div class="small-img-col">
+               <img src="/assets/images/products/41.jpg" width="100%" class="small-img img-fluid" alt="">
+            </div>
+            <div class="small-img-col">
+               <img src="./assets/images/products/2.jpg" width="100%" class="small-img img-fluid" alt="">
+            </div>
+            <div class="small-img-col">
+               <img src="./assets/images/products/45.jpg" width="100%" class="small-img img-fluid" alt="">
+            </div>
+            <div class="small-img-col">
+               <img src="./assets/images/products/51.jpg" width="100%" class="small-img img-fluid" alt="">
+            </div>
          </div>
-         <div class="slide-2 slides d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-white display-4 fw-bold">POLO 2023</h1>
-            <button class="hero-btn">Shop Now</button>
+      </div>
+
+      <div class="product-details single-pro-details">
+         <h6 id="type"></h6>
+         <h4 id="name"></h4>
+         <h2 id="price"></h2>
+         <select>
+            <option>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+         </select>
+         <div class="flex w-100">
+            <div class="wrapper">
+               <span class="minus">-</span>
+               <span class="num">1</span>
+               <span class="plus">+</span>
+            </div>
+            <button class="normal">Add To Cart</button>
          </div>
-      </section>
+         <div class="none">
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita hic voluptate eveniet
+               perspiciatis
+               at molestiae doloribus et molestias dignissimos, inventore, deserunt, eum animi libero adipisci
+               voluptatum
+               recusandae necessitatibus veniam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quam
+               accusantium officia veniam tempore et, ipsum aliquid ex consequuntur corrupti? </span>
+         </div>
+      </div>
+   </section>
+   <div class="section-p1 kuka p-4">
+      <h4>Product Details</h4>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita hic voluptate eveniet perspiciatis
+         at molestiae doloribus et molestias dignissimos, inventore, deserunt, eum animi libero adipisci voluptatum
+         recusandae necessitatibus veniam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quam
+         accusantium officia veniam tempore et, ipsum aliquid ex consequuntur corrupti? </span>
    </div>
 
-   <!-- Example HTML for displaying product ID -->
-<p class="d-none">Product ID: <span id="productId"></span></p>
-<p class="d-none">Title: <span id="title"></span></p>
-<p>Price: <span id="price"></span></p>
-<p>Name: <span id="name"></span></p>
-<img id="productImage" src="" alt="Product Image">
-
+   <!-- Best Seller -->
+   <div class="col-13 mx-auto section-p1">
+      <div class="h5 text-center">ALL TIME FAVOURITES</div>
+      <div class="display-4 fw-bold text-center">The Best Sellers</div>
+      <!-- <div class="d-md-flex text-center justify-content-md-between">
+         <div class="span">Our Best Seller</div>
+         <div class="tango">VIEW ALL BEST SELLERS</div>
+      </div> -->
+      <div id="bestSellerContainer">
+         <div class="pro-container"></div>
+      </div>
+   </div>
 
    <!-- Shop Men/Women -->
    <div class="container-fluid p-o better d-flex justify-content-center">
@@ -267,6 +321,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"></script>
    <script src="assets/js/product-page.js"></script>
+   <script src="assets/js/index.js"></script>
    <script src="assets/js/products.js"></script>
 </body>
 

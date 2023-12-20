@@ -8,14 +8,19 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <title>Document</title>
    <link rel="stylesheet" href="assets/css/index.css">
-   <link rel="stylesheet" href="assets/css/mens.css">
    <link rel="stylesheet" href="assets/css/nnn.css">
+   <link rel="stylesheet" href="assets/css/style.css">
    <script src="https://kit.fontawesome.com/0926a5a74f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-   <!-- navbar -->
+   <!-- Topbar -->
+   <section id="topbar" class="container-fluid text-center d-none d-lg-block">
+      <div class="col-12 mx-auto my-1 py-2">Free Express Shipping on all orders with all duties included</div>
+   </section>
+
+   <!-- Navbar -->
    <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
       <div class="container-fluid py-md-3 py-2 p-0">
          <div class="d-flex menu-items justify-content-between">
@@ -155,46 +160,66 @@
       <div><i class="fa-solid fa-chevron-right"></i></div>
    </div>
 
+   <section id="page-header" class="contact-header">
+		<h2>#lets_talk</h2>
+		<p>Don't Leave a message, We hate to reply</p>
+	</section>
 
-   <div class="col-10 men-items mx-auto">
-      <div class="men">
-         <div class="h1">Women</div>
-         <div class="d-md-flex justify-content-between">
-            <div class="d-flex align-items-center">
-               <button class="normal me-3"><i class="fa-solid fa-bars"></i> FILTER SHOES</button>
-               <div class="text-black-50 fs-5">Showing all 26 results</div>
-            </div>
-            <div class="d-flex">
-               <select class="pe-5 ps-3 py-3">
-                  <option>Default Sorting</option>
-                  <option>Sort by popularity</option>
-                  <option>Sort by average rating</option>
-                  <option>Sort by latest</option>
-                  <option>Sort by price:low to high</option>
-                  <option>Sort by price:high to low</option>
-               </select>
-            </div>
+   <section id="contact-details" class="section-p1">
+      <div class="details">
+         <span>GET IN TOUCH</span>
+         <h2>Visit one of our agency loaction if you are bored</h2>
+         <h3>Head Office</h3>
+         <div>
+            <li>
+               <i class="fa-regular fa-map"></i>
+               <p>Nerul Sector 02, Navi Mumbai</p>
+            </li>
+            <li>
+               <i class="fa-regular fa-envelope"></i>
+               <p>rushabh@gmail.com</p>
+            </li>
+            <li>
+               <i class="fa-solid fa-phone"></i>
+               <p>+91 9137996317</p>
+            </li>
+            <li>
+               <i class="fa-regular fa-clock"></i>
+               <p>Monday to Saturday: 9:00 am to 20:00 pm</p>
+            </li>
          </div>
       </div>
-   </div>
-   <div id="womenContainer">
-      <div class="pro-container"></div>
-   </div>
 
-
-   <!-- Shop Men/Women -->
-   <div class="container-fluid p-o better d-flex justify-content-center">
-      <div class="justify-content-center align-items-center text-center d-flex flex-column col-12 men">
-         <h1 class=" text-white">Better for People & the Planet</h1>
-         <div class="h4 text-white">Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate
-         </div>
-         <div class="d-flex">
-            <button class="normal me-4">SHOP MEN</button>
-            <button class="normal">SHOP WOMEN</button>
-         </div>
-
+      <div class="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.6974772210663!2d73.0154744500775!3d19.04568280623711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3e745abc8c7%3A0x4ec76b6d5d43fb68!2sLIG-30%2F4%2C%20Sector%202%2C%20Sarsole%2C%20Navi%20Mumbai%2C%20Maharashtra%20400706!5e0!3m2!1sen!2sin!4v1702634204528!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-   </div>
+   </section>
+
+   <section id="form-details">
+      <form action="">
+         <span>Leave a message</span>
+         <h2>We love to hear from you</h2>
+         <input type="text" placeholder="Your Name">
+         <input type="email" placeholder="Your Email">
+         <input type="text" placeholder="Subject">
+         <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+         <button class="normal">Submit</button>
+      </form>
+         <div class="people">
+            <div>
+               <img src="/assets/images/people/1.png" alt="">
+               <p><span>Roronoa Zoro</span> Senior Marketing Manager <br> Phone: +91 9137996317 <br> Email: contact@email.com</p>
+            </div>
+            <div>
+               <img src="/assets/images/people/2.png" alt="">
+               <p><span>Vinsmoke Sanji</span> Senior Marketing Manager <br> Phone: +91 9137996317 <br> Email: contact@email.com</p>
+            </div>
+            <div>
+               <img src="/assets/images/people/3.png" alt="">
+               <p><span>Crocodile</span> Senior Marketing Manager <br> Phone: +91 9137996317 <br> Email: contact@email.com</p>
+            </div>
+         </div>
+   </section>
 
    <!-- NewsLetter -->
    <section id="newsletter" class="section-m1 d-none d-md-flex">
@@ -254,10 +279,6 @@
       </div>
       <div class="copyright">@2023. Design by Tech2. Developed by Rushabh Bhosale</div>
    </section>
-
-
-
-
 
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

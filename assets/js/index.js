@@ -1,8 +1,4 @@
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
    const openMenu = document.querySelector('#menuToggle');
    const mobileMenu = document.querySelector('#mobileMenu');
@@ -57,14 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!container) {
          return;
       }
-         let innerHTML = '';
+      let innerHTML = '';
 
-         products.forEach(product => {
-            if (!container) {
-               return;
-           }
-           const imagePath = `assets/images/products/${product.image}`;
-            innerHTML += `
+      products.forEach(product => {
+         if (!container) {
+            return;
+         }
+         const imagePath = `assets/images/products/${product.image}`;
+         innerHTML += `
             <div class="pro position-relative" onclick="redirectToProduct('${product.name}', '${product.type}', '${product.price.original !== null ? product.price.original : `${product.price.discounted}`}', '${imagePath}', '${product.id}')">
                <img class="img-fluid" src="${product.image}">
                <div class="des">
@@ -85,64 +81,65 @@ document.addEventListener("DOMContentLoaded", function () {
                ${product.sale !== null ? `<div class="sale position-absolute">${product.sale}</div> ` : ''}
             </div>
          `;
-         });
+      });
 
-         container.innerHTML = innerHTML;
-      }
-
-      function renderPromise(container, products) {
-         return new Promise((resolve, reject) => {
-            renderProducts(container, products);
-            resolve();
-         });
-      }
-
-      Promise.resolve()
-         .then(() => renderPromise(womenContainer, womenProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(menContainer, menProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(allContainer, allProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(saleContainer, saleProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(bestSellerContainer, bestSellerProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(newArrivalContainer, newArrivalProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(hoodieContainer, hoodieProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(joggerContainer, joggerProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(kurtiContainer, kurtiProducts))
-         .catch((error) => console.error(error));
-
-      Promise.resolve()
-         .then(() => renderPromise(shoesContainer, shoesProducts))
-         .catch((error) => console.error(error));
-
-   });
-
-   function redirectToProduct(name, type, price, image, id) {
-      const productPageUrl = 'product-page.html';
-      const queryParams = `?name=${encodeURIComponent(name)}&type=${encodeURIComponent(type)}&price=${encodeURIComponent(price)}&image=${encodeURIComponent(image)}&id=${encodeURIComponent(id)}`;
-   
-      const redirectToUrl = productPageUrl + queryParams;
-      window.location.href = redirectToUrl;
+      container.innerHTML = innerHTML;
    }
+
+   function renderPromise(container, products) {
+      return new Promise((resolve, reject) => {
+         renderProducts(container, products);
+         resolve();
+      });
+   }
+
+   Promise.resolve()
+      .then(() => renderPromise(womenContainer, womenProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(menContainer, menProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(allContainer, allProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(saleContainer, saleProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(bestSellerContainer, bestSellerProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(newArrivalContainer, newArrivalProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(hoodieContainer, hoodieProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(joggerContainer, joggerProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(kurtiContainer, kurtiProducts))
+      .catch((error) => console.error(error));
+
+   Promise.resolve()
+      .then(() => renderPromise(shoesContainer, shoesProducts))
+      .catch((error) => console.error(error));
+});
+
+
+
+function redirectToProduct(name, type, price, image, id) {
+   const productPageUrl = 'product-page.html';
+   const queryParams = `?name=${encodeURIComponent(name)}&type=${encodeURIComponent(type)}&price=${encodeURIComponent(price)}&image=${encodeURIComponent(image)}&id=${encodeURIComponent(id)}`;
+
+   const redirectToUrl = productPageUrl + queryParams;
+   window.location.href = redirectToUrl;
+}

@@ -167,7 +167,15 @@ button.transparent:hover {
    font-size: 22px;
 }
 
-#menu .menu-items .item:hover {
+#menu .menu-items .item .main-item {
+   font-size: 18px;
+   cursor: pointer;
+   color: #979a9b;
+   font-weight: 600;
+   transition: 0.3s ease;
+}
+
+#menu .menu-items .item .main-item:hover {
    color: black;
 }
 
@@ -1206,7 +1214,6 @@ footer .foot-links div {
    #shoesContainer .pro {
       min-width: 172px;
       width: 23%;
-      min-width: 250px;
       height: 300px;
       padding: 10px 12px;
       border: 1px solid #cce7d0;

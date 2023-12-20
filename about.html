@@ -8,14 +8,19 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <title>Document</title>
    <link rel="stylesheet" href="assets/css/index.css">
-   <link rel="stylesheet" href="assets/css/mens.css">
    <link rel="stylesheet" href="assets/css/nnn.css">
+   <link rel="stylesheet" href="assets/css/style.css">
    <script src="https://kit.fontawesome.com/0926a5a74f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-   <!-- navbar -->
+   <!-- Topbar -->
+   <section id="topbar" class="container-fluid text-center d-none d-lg-block">
+      <div class="col-12 mx-auto my-1 py-2">Free Express Shipping on all orders with all duties included</div>
+   </section>
+
+   <!-- Navbar -->
    <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
       <div class="container-fluid py-md-3 py-2 p-0">
          <div class="d-flex menu-items justify-content-between">
@@ -30,29 +35,49 @@
                </div>
                <div class="d-none d-md-flex">
                   <a href="men.html">
-                     <div class="item px-3">MEN</div>
+                     <div class="item px-3 position-relative">
+                        <div class="main-item">Men</div> <div class="position-absolute sub-item mt-4 bott0m-0">
+                           <div>Men</div>
+                           <div>Men</div>
+                           <div>Men</div>
+                           <div>Men</div>
+                           <div>Men</div>
+                        </div>
+                     </div>
                   </a>
                   <a href="women.html">
-                     <div class="item px-3">WOMEN</div>
+                     <div class="item px-3">
+                        <div class="main-item">WOMEN</div>
+                     </div>
                   </a>
                   <a href="shop.html">
-                     <div class="item px-3">COLLECTION</div>
+                     <div class="item px-3">
+                        <div class="main-item">COLLECTION</div>
+                     </div>
                   </a>
                   <a href="blog.html">
-                     <div class="item px-3">LOOKBOOK</div>
+                     <div class="item px-3">
+                        <div class="main-item">LOOKBOOK</div>
+                     </div>
                   </a>
                   <a href="sale.html">
-                     <div class="item px-3">SALE</div>
+                     <div class="item px-3">
+                        <div class="main-item">SALE</div>
+                     </div>
                   </a>
                </div>
             </div>
             <div class="d-flex menu-right justify-content-end">
                <div class="d-none d-lg-flex align-items-center">
                   <a href="about.html">
-                     <div class="item px-3">OUR STORY</div>
+                     <div class="item px-3">
+                        <div class="main-item">OUR STORY</div>
+                     </div>
                   </a>
                   <a href="contact.html">
-                     <div class="item px-3">CONTACT</div>
+                     <div class="item px-3">
+                        <div class="main-item">CONTACT</div>
+                     </div>
                   </a>
                   <a href="login.html">
                      <div class="item px-3"><i class="p-2 fa-solid fa-user"></i></div>
@@ -155,46 +180,29 @@
       <div><i class="fa-solid fa-chevron-right"></i></div>
    </div>
 
+   <section id="page-header" class="about-header">
+		<h2>#knowUs</h2>
+		<p>Read all casestudies about our brand!</p>
+	</section>
 
-   <div class="col-10 men-items mx-auto">
-      <div class="men">
-         <div class="h1">Women</div>
-         <div class="d-md-flex justify-content-between">
-            <div class="d-flex align-items-center">
-               <button class="normal me-3"><i class="fa-solid fa-bars"></i> FILTER SHOES</button>
-               <div class="text-black-50 fs-5">Showing all 26 results</div>
-            </div>
-            <div class="d-flex">
-               <select class="pe-5 ps-3 py-3">
-                  <option>Default Sorting</option>
-                  <option>Sort by popularity</option>
-                  <option>Sort by average rating</option>
-                  <option>Sort by latest</option>
-                  <option>Sort by price:low to high</option>
-                  <option>Sort by price:high to low</option>
-               </select>
-            </div>
-         </div>
+   <section id="about-head" class="section-p1">
+      <img src="./assets/images/about/a6.jpg" alt="">
+      <div>
+         <h2>Who We Are?</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam sed nobis odio vitae aut inventore consequatur explicabo, nisi labore cum cumque tempora ratione debitis, fuga accusantium officia doloremque. Cumque, dolorem provident? Incidunt, eum maiores aliquam quaerat quidem cum amet.</p>
+
+         <abbr title="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iste exercitationem nobis dolorum omnis sint et nisi illum eos sunt.</abbr><br><br>
+
+         <marquee bgcolor="#ccc" loop="-1" width="100%" scrollamount="5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae sequi cum ratione. Consequatur laboriosam voluptates eveniet esse minus voluptas quod!</marquee>
       </div>
-   </div>
-   <div id="womenContainer">
-      <div class="pro-container"></div>
-   </div>
+   </section>
 
-
-   <!-- Shop Men/Women -->
-   <div class="container-fluid p-o better d-flex justify-content-center">
-      <div class="justify-content-center align-items-center text-center d-flex flex-column col-12 men">
-         <h1 class=" text-white">Better for People & the Planet</h1>
-         <div class="h4 text-white">Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate
-         </div>
-         <div class="d-flex">
-            <button class="normal me-4">SHOP MEN</button>
-            <button class="normal">SHOP WOMEN</button>
-         </div>
-
-      </div>
-   </div>
+	<section id="about-app" class="section-p1">
+		<h1>Download Our <span><a href="#">App</a></span></h1>
+		<div class="video">
+			<video autoplay muted loop src="assets/images/about/1.mp4"></video>
+		</div>
+	</section>
 
    <!-- NewsLetter -->
    <section id="newsletter" class="section-m1 d-none d-md-flex">
@@ -254,10 +262,6 @@
       </div>
       <div class="copyright">@2023. Design by Tech2. Developed by Rushabh Bhosale</div>
    </section>
-
-
-
-
 
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
