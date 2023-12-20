@@ -13,7 +13,13 @@ body {
 
 #menContainer .pro-container,
 #womenContainer .pro-container,
-#joggerContainer .pro-container {
+#joggerContainer .pro-container,
+#saleContainer .pro-container,
+#joggerContainer .pro-container,
+#kurtiContainer .pro-container,
+#shoesContainer .pro-container,
+#hoodieContainer .pro-container,
+#allContainer .pro-container {
    padding: 20px 120px !important;
 }
 

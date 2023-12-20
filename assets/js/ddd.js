@@ -66,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
            const imagePath = `assets/images/products/${product.image}`;
             innerHTML += `
             <div class="pro position-relative" onclick="redirectToProduct('${product.name}', '${product.type}', '${product.price.original !== null ? product.price.original : `${product.price.discounted}`}', '${imagePath}', '${product.id}')">
-               <img class="img-fluid" src="${product.image}">
+
+            <img class="img-fluid" src="${imagePath}">
                <div class="des">
                   <span>${product.type} ${product.id}</span>
                   <h5>${product.name}</h5>

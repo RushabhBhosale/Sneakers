@@ -158,26 +158,26 @@
 
    <div class="col-10 men-items mx-auto">
       <div class="men">
-         <div class="h1">Shoes</div>
+         <div class="h1">Shop</div>
          <div class="d-md-flex justify-content-between">
             <div class="d-flex align-items-center">
                <button class="normal me-3"><i class="fa-solid fa-bars"></i> FILTER SHOES</button>
                <div class="text-black-50 fs-5">Showing all 8 results</div>
             </div>
             <div class="d-flex">
-               <select class="pe-5 ps-3 py-3">
-                  <option>Default Sorting</option>
-                  <option>Sort by popularity</option>
-                  <option>Sort by average rating</option>
-                  <option>Sort by latest</option>
-                  <option>Sort by price:low to high</option>
-                  <option>Sort by price:high to low</option>
+               <select id="sortDropDown" class="pe-5 ps-3 py-3" onchange="sortProducts">
+                  <option value="default">Default Sorting</option>
+                  <option value="popularity">Sort by popularity</option>
+                  <option value="rating">Sort by average rating</option>
+                  <option value="latest">Sort by latest</option>
+                  <option value="lowToHigh">Sort by price:low to high</option>
+                  <option value="highToLow">Sort by price:high to low</option>
                </select>
             </div>
          </div>
       </div>
    </div>
-   <div id="shoesContainer">
+   <div id="allContainer">
       <div class="pro-container"></div>
    </div>
 
