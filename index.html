@@ -29,7 +29,7 @@
             <div class="d-flex menu-left justify-content-between align-items-center">
                <div class="logo">
                   <a href="index.html"><img class="img-fluid me-3"
-                        src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/site-logo.svg"
+                        src="assets/images/logo.png"
                         alt="logo"></a>
                </div>
                <div class="d-none d-md-flex">
@@ -92,10 +92,24 @@
          <div class="item px-3 py-4">
             <a class="accordion-header" href="index.html">Home</a>
          </div>
-         <div class="item px-3 py-4">
-            <a href="shop.html">Shop Everything</a>
-         </div>
          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                     aria-controls="panelsStayOpen-collapseOne">
+                     Shop
+                  </button>
+               </h2>
+               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                     <a href="men.html">Men</a>
+                  </div>
+                  <div class="accordion-body">
+                     <a href="women.html">Women</a>
+                  </div>
+               </div>
+            </div>
             <div class="accordion-item">
                <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -142,6 +156,15 @@
                   </button>
                </h2>
                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                     About Us
+                  </div>
+                  <div class="accordion-body">
+                     Lookbook
+                  </div>
+                  <div class="accordion-body">
+                     Our Story
+                  </div>
                   <div class="accordion-body">
                      Track My Order
                   </div>
@@ -284,7 +307,7 @@
    <section id="banner" class="section-m1">
       <h4>Best Fashion Clothing</h4>
       <h2>Up to <span>70% off</span> - All Clothings & Accessories</h2>
-      <button class="normal">Explore More</button>
+      <a href="shop.html"><button class="normal">Explore More</button></a>
    </section>
 
    <!-- New Arrival Products -->
@@ -300,18 +323,22 @@
 
    <!-- 2 Banners -->
    <section id="sm-banner" class="section-p1 pt-0 d-none d-lg-flex">
-      <div class="banner-box">
-         <h4>Crazy deals</h4>
-         <h2>Buy 1 Get 1 Free</h2>
-         <span>The best classic dress is on sale at cara</span>
-         <button class="white">Learn More</button>
-      </div>
-      <div class="banner-box banner-box2">
-         <h4>Spring / Summer</h4>
-         <h2>Upcoming Season</h2>
-         <span>The best classic dress is on sale at cara</span>
-         <button class="white">Collection</button>
-      </div>
+      <a href="sale.html">
+         <div class="banner-box">
+            <h4>Crazy deals</h4>
+            <h2>Buy 1 Get 1 Free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Learn More</button>
+         </div>
+      </a>
+      <a href="sale.html">
+         <div class="banner-box banner-box2">
+            <h4>Spring / Summer</h4>
+            <h2>Upcoming Season</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Collection</button>
+         </div>
+      </a>
    </section>
 
    <!-- 3 Banners -->

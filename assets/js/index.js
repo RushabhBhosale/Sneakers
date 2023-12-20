@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
    const bestSellerProducts = products.filter(product => product.category == 'bestseller');
    const newArrivalProducts = products.filter(product => product.category == 'new');
    const hoodieProducts = products.filter(product => product.type == 'Hoodie');
-   const kurtiProducts = products.filter(product => product.type == 'kurti');
+   const kurtiProducts = products.filter(product => product.type == 'Kurti');
    const joggerProducts = products.filter(product => product.type == 'Joggers');
    const shoesProducts = products.filter(product => product.type == 'Shoes');
 

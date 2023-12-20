@@ -17,7 +17,7 @@
 
    <!-- navbar -->
    <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
-      <div class="container-fluid py-md-3 py-2 p-0">
+      <div class="container-fluid py-md-2 py-2">
          <div class="d-flex menu-items justify-content-between">
             <div class="item d-md-none px-3" id="menuToggle">
                <i class="p-2 bars fa-solid fa-bars"></i>
@@ -25,41 +25,53 @@
             <div class="d-flex menu-left justify-content-between align-items-center">
                <div class="logo">
                   <a href="index.html"><img class="img-fluid me-3"
-                        src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/site-logo.svg"
+                        src="assets/images/logo.png"
                         alt="logo"></a>
                </div>
                <div class="d-none d-md-flex">
                   <a href="men.html">
-                     <div class="item px-3">MEN</div>
+                     <div class="item p-3 position-relative">
+                        MEN <ul class="position-absolute sub-menu">
+                           <li><a class="fs-6 py-2" href="jogger.html">Joggers</a></li>
+                           <li><a class="fs-6 py-2" href="hoodie.html">Hoodies</a></li>
+                           <li><a class="fs-6 py-2" href="men.html">Shirts</a></li>
+                           <li><a class="fs-6 py-2" href="shoes.html">Shoes</a></li>
+                        </ul>
+                     </div>
                   </a>
                   <a href="women.html">
-                     <div class="item px-3">WOMEN</div>
+                     <div class="item p-3 position-relative">
+                        WOMEN <ul class="position-absolute sub-menu">
+                           <li><a class="fs-6 py-2" href="kurti.html">Kurti</a></li>
+                           <li><a class="fs-6 py-2" href="shoes.html">Shoes</a></li>
+                        </ul>
+                     </div>
                   </a>
                   <a href="shop.html">
-                     <div class="item px-3">COLLECTION</div>
+                     <div class="item p-3">COLLECTION</div>
                   </a>
                   <a href="blog.html">
-                     <div class="item px-3">LOOKBOOK</div>
+                     <div class="item p-3">LOOKBOOK</div>
                   </a>
                   <a href="sale.html">
-                     <div class="item px-3">SALE</div>
+                     <div class="item p-3">SALE</div>
                   </a>
                </div>
             </div>
             <div class="d-flex menu-right justify-content-end">
                <div class="d-none d-lg-flex align-items-center">
                   <a href="about.html">
-                     <div class="item px-3">OUR STORY</div>
+                     <div class="item p-3">OUR STORY</div>
                   </a>
                   <a href="contact.html">
-                     <div class="item px-3">CONTACT</div>
+                     <div class="item p-3">CONTACT</div>
                   </a>
                   <a href="login.html">
-                     <div class="item px-3"><i class="p-2 fa-solid fa-user"></i></div>
+                     <div class="item p-3"><i class="p-2 fa-solid fa-user"></i></div>
                   </a>
                </div>
                <a href="cart.html">
-                  <div class="item px-3"><i class="p-2 fa-solid fa-bag-shopping"></i></div>
+                  <div class="item p-3"><i class="p-1 fa-solid fa-bag-shopping"></i></div>
                </a>
             </div>
          </div>
@@ -76,65 +88,94 @@
          <div class="item px-3 py-4">
             <a class="accordion-header" href="index.html">Home</a>
          </div>
-         <div class="item px-3 py-4">
-            <a href="shop.html">Shop Everything</a>
-         </div>
          <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Men
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <a href="hoodie.html">Hoodie</a>
-                </div>
-                <div class="accordion-body">
-                  <a href="jogger.html">Joggers</a>
-                </div>
-                <div class="accordion-body">
-                  <a href="shoes.html">Shoes</a>
-                </div>
-              </div>
+               <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                     aria-controls="panelsStayOpen-collapseOne">
+                     Shop
+                  </button>
+               </h2>
+               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                     <a href="men.html">Men</a>
+                  </div>
+                  <div class="accordion-body">
+                     <a href="women.html">Women</a>
+                  </div>
+               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Women
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <a href="kurti.html">Kurti</a>
-                </div>
-                <div class="accordion-body">
-                  <a href="shoes.html">Shoes</a>
-                </div>
-              </div>
+               <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                     aria-controls="panelsStayOpen-collapseOne">
+                     Men
+                  </button>
+               </h2>
+               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                     <a href="hoodie.html">Hoodie</a>
+                  </div>
+                  <div class="accordion-body">
+                     <a href="jogger.html">Joggers</a>
+                  </div>
+                  <div class="accordion-body">
+                     <a href="shoes.html">Shoes</a>
+                  </div>
+               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                  More
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  Track My Order
-                </div>
-                <div class="accordion-body">
-                  Returns & Refunds
-                </div>
-                <div class="accordion-body">
-                  Cancellation Policy
-                </div>
-                <div class="accordion-body">
-                  Terms & Conditions
-                </div>
-              </div>
+               <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                     aria-controls="panelsStayOpen-collapseTwo">
+                     Women
+                  </button>
+               </h2>
+               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                     <a href="kurti.html">Kurti</a>
+                  </div>
+                  <div class="accordion-body">
+                     <a href="shoes.html">Shoes</a>
+                  </div>
+               </div>
             </div>
-          </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                     aria-controls="panelsStayOpen-collapseThree">
+                     More
+                  </button>
+               </h2>
+               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                     About Us
+                  </div>
+                  <div class="accordion-body">
+                     Lookbook
+                  </div>
+                  <div class="accordion-body">
+                     Our Story
+                  </div>
+                  <div class="accordion-body">
+                     Track My Order
+                  </div>
+                  <div class="accordion-body">
+                     Returns & Refunds
+                  </div>
+                  <div class="accordion-body">
+                     Cancellation Policy
+                  </div>
+                  <div class="accordion-body">
+                     Terms & Conditions
+                  </div>
+               </div>
+            </div>
+         </div>
          <div class="item px-3 py-4">
             <a href="contact.html">Contact</a>
          </div>
@@ -187,8 +228,8 @@
          <div class="h4 text-white">Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate
          </div>
          <div class="d-flex">
-            <button class="normal me-4">SHOP MEN</button>
-            <button class="normal">SHOP WOMEN</button>
+            <a href="men.html"><button class="normal me-4">SHOP MEN</button></a>
+            <a href="women.html"><button class="normal">SHOP WOMEN</button></a>
          </div>
 
       </div>

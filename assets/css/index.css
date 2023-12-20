@@ -218,6 +218,10 @@ button.transparent:hover {
    width: 155px !important;
 }
 
+.logo a img {
+   transform: scale(1.5);
+}
+
 #mobileMenu {
    transform: translateX(-100%);
    transition: 0.5s ease;

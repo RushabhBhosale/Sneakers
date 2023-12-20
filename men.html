@@ -25,7 +25,7 @@
             <div class="d-flex menu-left justify-content-between align-items-center">
                <div class="logo">
                   <a href="index.html"><img class="img-fluid me-3"
-                        src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/site-logo.svg"
+                        src="assets/images/logo.png"
                         alt="logo"></a>
                </div>
                <div class="d-none d-md-flex">
@@ -88,10 +88,24 @@
          <div class="item px-3 py-4">
             <a class="accordion-header" href="index.html">Home</a>
          </div>
-         <div class="item px-3 py-4">
-            <a href="shop.html">Shop Everything</a>
-         </div>
          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                     aria-controls="panelsStayOpen-collapseOne">
+                     Shop
+                  </button>
+               </h2>
+               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                     <a href="men.html">Men</a>
+                  </div>
+                  <div class="accordion-body">
+                     <a href="women.html">Women</a>
+                  </div>
+               </div>
+            </div>
             <div class="accordion-item">
                <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -138,6 +152,15 @@
                   </button>
                </h2>
                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                     About Us
+                  </div>
+                  <div class="accordion-body">
+                     Lookbook
+                  </div>
+                  <div class="accordion-body">
+                     Our Story
+                  </div>
                   <div class="accordion-body">
                      Track My Order
                   </div>
@@ -204,8 +227,8 @@
          <div class="h4 text-white">Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate
          </div>
          <div class="d-flex">
-            <button class="normal me-4">SHOP MEN</button>
-            <button class="normal">SHOP WOMEN</button>
+            <a href="men.html"><button class="normal me-4">SHOP MEN</button></a>
+            <a href="women.html"><button class="normal">SHOP WOMEN</button></a>
          </div>
 
       </div>
