@@ -8,14 +8,34 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <title>Document</title>
    <link rel="stylesheet" href="assets/css/index.css">
-   <link rel="stylesheet" href="assets/css/mens.css">
    <link rel="stylesheet" href="assets/css/nnn.css">
    <script src="https://kit.fontawesome.com/0926a5a74f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-   <!-- navbar -->
+   <!-- PreLoader -->
+   <div class="preloader">
+      <div class="spinner">
+         <div></div>   
+         <div></div>    
+         <div></div>    
+         <div></div>    
+         <div></div>    
+         <div></div>    
+         <div></div>    
+         <div></div>    
+         <div></div>    
+         <div></div>    
+       </div>
+   </div>
+
+   <!-- Topbar -->
+   <section id="topbar" class="container-fluid text-center d-none d-lg-block">
+      <div class="col-12 mx-auto my-1 py-2">Free Express Shipping on all orders with all duties included</div>
+   </section>
+
+   <!-- Navbar -->
    <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
       <div class="container-fluid py-md-2 py-2">
          <div class="d-flex menu-items justify-content-between">
@@ -71,7 +91,10 @@
                   </a>
                </div>
                <a href="cart.html">
-                  <div class="item p-3"><i class="p-1 fa-solid fa-bag-shopping"></i></div>
+                  <div class="item position-relative p-3">
+                     <i class="p-1 fa-solid bagg fa-bag-shopping"></i>
+                     <span class="bag-item-count position-absolute">0</span>
+                  </div>
                </a>
             </div>
          </div>
@@ -193,59 +216,8 @@
    </div>
    <div class="kabum"></div>
 
+   <div class="bag-items-container"></div>
 
-   <div class="col-10 men-items mx-auto">
-      <div class="men">
-         <div class="h1">Joggers</div>
-         <div class="d-md-flex justify-content-between">
-            <div class="d-flex align-items-center">
-               <button class="normal me-3 mb-3"><i class="fa-solid fa-bars"></i> FILTER</button>
-
-               <div class="text-black-50 fs-5">Showing all 8 results</div>
-            </div>
-            <div class="d-flex">
-               <select class="pe-5 ps-3 py-3">
-                  <option>Default Sorting</option>
-                  <option>Sort by popularity</option>
-                  <option>Sort by average rating</option>
-                  <option>Sort by latest</option>
-                  <option>Sort by price:low to high</option>
-                  <option>Sort by price:high to low</option>
-               </select>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div id="joggerContainer">
-      <div class="pro-container"></div>
-   </div>
-
-
-   <!-- Shop Men/Women -->
-   <div class="container-fluid p-o better d-flex justify-content-center">
-      <div class="justify-content-center align-items-center text-center d-flex flex-column col-12 men">
-         <h1 class=" text-white">Better for People & the Planet</h1>
-         <div class="h4 text-white">Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate
-         </div>
-         <div class="d-flex">
-            <a href="men.html"><button class="normal me-4">SHOP MEN</button></a>
-            <a href="women.html"><button class="normal">SHOP WOMEN</button></a>
-         </div>
-
-      </div>
-   </div>
-
-   <!-- NewsLetter -->
-   <section id="newsletter" class="section-m1 d-none d-md-flex">
-      <div class="newstext">
-         <h4>Sign Up For Newsletter</h4>
-         <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
-      </div>
-      <div class="form">
-         <input type="email" placeholder="Your email address">
-         <button class="normal">Sign Up</button>
-      </div>
-   </section>
 
    <!-- Footer -->
    <section id="footer" class="section-p1 d-flex">
@@ -294,10 +266,6 @@
       <div class="copyright">@2023. Design by Tech2. Developed by Rushabh Bhosale</div>
    </section>
 
-
-
-
-
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"></script>
@@ -306,7 +274,9 @@
       crossorigin="anonymous"></script>
    <script src="assets/js/index.js"></script>
    <script src="assets/js/products.js"></script>
-   
+   <script src="assets/js/loader.js"></script>
+   <script src="assets/js/bag.js"></script>
+
 </body>
 
 </html>

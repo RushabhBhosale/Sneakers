@@ -1,9 +1,31 @@
+let bagItems;
 
-var loader = document.querySelector('.preloader');
+let bagItemsStr = localStorage.getItem('bagItems');
+bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
 
-      window.addEventListener("load", function() {
-         loader.style.display = "none";
-      })
+displayBagItems();
+
+function addToBag(productId) {
+   bagItems.push(productId);
+   localStorage.setItem('bagItems', JSON.stringify(bagItems));
+   displayBagItems();
+}
+
+function displayBagItems() {
+   let bagItemCount = document.querySelector('.bag-item-count');
+   if (bagItemCount) {
+      if (bagItems.length > 0) {
+         bagItemCount.style.visibility = 'visible';
+         bagItemCount.innerText = bagItems.length;
+      } else {
+         bagItemCount.style.visibility = 'hidden';
+      }
+   } else {
+      console.error("Element with class 'bag-item-count' not found.");
+   }
+}
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
    const openMenu = document.querySelector('#menuToggle');
@@ -59,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!container) {
          return;
       }
+
       let innerHTML = '';
 
       products.forEach(product => {
@@ -67,30 +90,34 @@ document.addEventListener("DOMContentLoaded", function () {
          }
          const imagePath = `assets/images/products/${product.image}`;
          innerHTML += `
-            <div class="pro position-relative" onclick="redirectToProduct('${product.name}', '${product.type}', '${product.price.original !== null ? product.price.original : `${product.price.discounted}`}', '${imagePath}', '${product.id}')">
-               <img class="img-fluid" src="${product.image}">
-               <div class="des">
-                  <span>${product.type}</span>
-                  <h5>${product.name}</h5>
-                  <div class="star">
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div class="d-flex price position-absolute align-items-center">
-                     <h4 class="me-2 fs-6">${product.price.original !== null ? product.price.original : `${product.price.discounted}`}</h4>
-                     <h4 class="discount">${product.price.discounted}</h4>
-                  </div>
-               </div>
-               ${product.sale !== null ? `<div class="sale position-absolute">${product.sale}</div> ` : ''}
+         <div class="pro position-relative">
+         <img class="img-fluid" src="${product.image}" onclick="redirectToProduct('${product.name}', '${product.type}', '${product.price.original !== null ? product.price.original : `${product.price.discounted}`}', '${imagePath}', '${product.id}')">
+         <div class="des">
+            <span>${product.type}</span>
+            <h5>${product.name}</h5>
+            <div class="star">
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
             </div>
+            <div class="d-flex price position-absolute align-items-center">
+               <h4 class="me-2 fs-6">${product.price.original !== null ? product.price.original : `${product.price.discounted}`}</h4>
+               <h4 class="discount">${product.price.discounted}</h4>
+            </div>
+         </div>
+         
+
+         ${product.sale !== null ? `<div class="sale position-absolute">${product.sale}</div> ` : ''}
+         <button class="position-absolute cart" onclick="addToBag(${product.id})"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
          `;
       });
 
       container.innerHTML = innerHTML;
    }
+
 
    function renderPromise(container, products) {
       return new Promise((resolve, reject) => {

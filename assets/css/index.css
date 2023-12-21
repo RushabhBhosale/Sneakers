@@ -247,6 +247,8 @@ button.transparent:hover {
    }
  }
 
+ 
+
 /* ********** */
 /* Navbar */
 /* ********** */
@@ -293,6 +295,20 @@ button.transparent:hover {
 
 #menu .menu-items a:hover {
    color: black !important;
+}
+
+#menu .menu-items .item .bagg {
+   font-size: 26px;
+}
+
+#menu .menu-items .item .bag-item-count {
+   bottom: 14px;
+   right: 11px;
+   background-color: #f95959;
+   color: rgb(255, 255, 255);
+   border-radius: 50%;
+   padding: 1px 6px;
+   font-size: 12px;
 }
 
 #menu .menu-items .item .sub-menu {
