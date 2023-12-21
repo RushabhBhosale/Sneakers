@@ -91,6 +91,10 @@ button {
    outline: none;
 }
 
+.people img {
+   border-radius: 50%;
+}
+
 img,
 ion-icon,
 button,

@@ -218,9 +218,7 @@ button.transparent:hover {
    width: 155px !important;
 }
 
-.logo a img {
-   transform: scale(2);
-}
+
 
 #mobileMenu {
    transform: translateX(-100%);
@@ -919,6 +917,10 @@ button.transparent:hover {
 
 .user img {
    border-radius: 50%;
+   width: 80px;
+   height: 80px;
+   object-fit: cover;
+   object-position: center;
 }
 
 .user div {
@@ -1167,6 +1169,11 @@ footer .foot-links div {
 }
 
 @media (max-width: 576px) {
+
+   .logo a img {
+      transform: scale(2);
+   }
+
    #menu .menu-items .menu-left .logo {
       width: 95px !important;
    }

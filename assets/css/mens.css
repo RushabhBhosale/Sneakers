@@ -75,7 +75,9 @@ body {
    #saleContainer .pro,
    #newArrivalContainer .pro,
    #joggerContainer .pro,
-   #kurtiContainer.pro {
+   #kurtiContainer.pro,
+   #shoesContainer .pro-container,
+   #hoodieContainer .pro-container {
       margin: 5px 0;
    }
 
@@ -94,7 +96,9 @@ body {
    #saleContainer .pro-container,
    #allContainer .pro-container,
    #joggerContainer .pro-container,
-   #kurtiContainer .pro-container {
+   #kurtiContainer .pro-container,
+   #shoesContainer .pro-container,
+   #hoodieContainer .pro-container {
       padding: 20px !important;
    }
 
