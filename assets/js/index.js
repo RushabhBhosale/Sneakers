@@ -1,4 +1,10 @@
 
+var loader = document.querySelector('.preloader');
+
+      window.addEventListener("load", function() {
+         loader.style.display = "none";
+      })
+
 document.addEventListener("DOMContentLoaded", function () {
    const openMenu = document.querySelector('#menuToggle');
    const mobileMenu = document.querySelector('#mobileMenu');
