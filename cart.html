@@ -37,185 +37,188 @@
    </section>
 
    <!-- Navbar -->
-   <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
-      <div class="container-fluid py-md-2 py-2">
-         <div class="d-flex menu-items justify-content-between">
-            <div class="item d-md-none px-3" id="menuToggle">
-               <i class="p-2 bars fa-solid fa-bars"></i>
-            </div>
-            <div class="d-flex menu-left justify-content-between align-items-center">
-               <div class="logo">
-                  <a href="index.html"><img class="img-fluid me-3" src="assets/images/logo.png" alt="logo"></a>
+   <div>
+      <section id="menu" class="container-fluid px-lg-5 p-0 fixed-top">
+         <div class="container-fluid py-md-2 py-2">
+            <div class="d-flex menu-items justify-content-between">
+               <div class="item d-md-none px-3" id="menuToggle">
+                  <i class="p-2 bars fa-solid fa-bars"></i>
                </div>
-               <div class="d-none d-md-flex">
-                  <a href="men.html">
-                     <div class="item p-3 position-relative">
-                        MEN <ul class="position-absolute sub-menu">
-                           <li><a class="fs-6 py-2" href="jogger.html">Joggers</a></li>
-                           <li><a class="fs-6 py-2" href="hoodie.html">Hoodies</a></li>
-                           <li><a class="fs-6 py-2" href="men.html">Shirts</a></li>
-                           <li><a class="fs-6 py-2" href="shoes.html">Shoes</a></li>
-                        </ul>
+               <div class="d-flex menu-left justify-content-between align-items-center">
+                  <div class="logo">
+                     <a href="index.html"><img class="img-fluid me-3" src="assets/images/logo.png" alt="logo"></a>
+                  </div>
+                  <div class="d-none d-md-flex">
+                     <a href="men.html">
+                        <div class="item p-3 position-relative">
+                           MEN <ul class="position-absolute sub-menu">
+                              <li><a class="fs-6 py-2" href="jogger.html">Joggers</a></li>
+                              <li><a class="fs-6 py-2" href="hoodie.html">Hoodies</a></li>
+                              <li><a class="fs-6 py-2" href="men.html">Shirts</a></li>
+                              <li><a class="fs-6 py-2" href="shoes.html">Shoes</a></li>
+                           </ul>
+                        </div>
+                     </a>
+                     <a href="women.html">
+                        <div class="item p-3 position-relative">
+                           WOMEN <ul class="position-absolute sub-menu">
+                              <li><a class="fs-6 py-2" href="kurti.html">Kurti</a></li>
+                              <li><a class="fs-6 py-2" href="shoes.html">Shoes</a></li>
+                           </ul>
+                        </div>
+                     </a>
+                     <a href="shop.html">
+                        <div class="item p-3">COLLECTION</div>
+                     </a>
+                     <a href="blog.html">
+                        <div class="item p-3">LOOKBOOK</div>
+                     </a>
+                     <a href="sale.html">
+                        <div class="item p-3">SALE</div>
+                     </a>
+                  </div>
+               </div>
+               <div class="d-flex menu-right justify-content-end">
+                  <div class="d-none d-lg-flex align-items-center">
+                     <a href="about.html">
+                        <div class="item p-3">OUR STORY</div>
+                     </a>
+                     <a href="contact.html">
+                        <div class="item p-3">CONTACT</div>
+                     </a>
+                     <a href="login.html">
+                        <div class="item p-3"><i class="p-2 fa-solid fa-user"></i></div>
+                     </a>
+                  </div>
+                  <a href="cart.html">
+                     <div class="item position-relative p-3">
+                        <i class="p-1 fa-solid bagg fa-bag-shopping"></i>
+                        <span class="bag-item-count position-absolute">0</span>
                      </div>
                   </a>
-                  <a href="women.html">
-                     <div class="item p-3 position-relative">
-                        WOMEN <ul class="position-absolute sub-menu">
-                           <li><a class="fs-6 py-2" href="kurti.html">Kurti</a></li>
-                           <li><a class="fs-6 py-2" href="shoes.html">Shoes</a></li>
-                        </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div id="mobileMenu">
+         <div class="mobile-nav">
+            <div class="close" id="closeMenu">
+               <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="item px-2">
+               <a href="login.html"><i class="p-2 user fa-solid fa-user"></i></a>
+            </div>
+            <div class="item px-3 py-4">
+               <a class="accordion-header" href="index.html">Home</a>
+            </div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Shop
+                     </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                     <div class="accordion-body">
+                        <a href="men.html">Men</a>
                      </div>
-                  </a>
-                  <a href="shop.html">
-                     <div class="item p-3">COLLECTION</div>
-                  </a>
-                  <a href="blog.html">
-                     <div class="item p-3">LOOKBOOK</div>
-                  </a>
-                  <a href="sale.html">
-                     <div class="item p-3">SALE</div>
-                  </a>
-               </div>
-            </div>
-            <div class="d-flex menu-right justify-content-end">
-               <div class="d-none d-lg-flex align-items-center">
-                  <a href="about.html">
-                     <div class="item p-3">OUR STORY</div>
-                  </a>
-                  <a href="contact.html">
-                     <div class="item p-3">CONTACT</div>
-                  </a>
-                  <a href="login.html">
-                     <div class="item p-3"><i class="p-2 fa-solid fa-user"></i></div>
-                  </a>
-               </div>
-               <a href="cart.html">
-                  <div class="item position-relative p-3">
-                     <i class="p-1 fa-solid bagg fa-bag-shopping"></i>
-                     <span class="bag-item-count position-absolute">0</span>
-                  </div>
-               </a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <div id="mobileMenu">
-      <div class="mobile-nav">
-         <div class="close" id="closeMenu">
-            <i class="fa-solid fa-xmark"></i>
-         </div>
-         <div class="item px-2">
-            <a href="login.html"><i class="p-2 user fa-solid fa-user"></i></a>
-         </div>
-         <div class="item px-3 py-4">
-            <a class="accordion-header" href="index.html">Home</a>
-         </div>
-         <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-               <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                     aria-controls="panelsStayOpen-collapseOne">
-                     Shop
-                  </button>
-               </h2>
-               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                     <a href="men.html">Men</a>
-                  </div>
-                  <div class="accordion-body">
-                     <a href="women.html">Women</a>
+                     <div class="accordion-body">
+                        <a href="women.html">Women</a>
+                     </div>
                   </div>
                </div>
-            </div>
-            <div class="accordion-item">
-               <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                     aria-controls="panelsStayOpen-collapseFour">
-                     Men
-                  </button>
-               </h2>
-               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                     <a href="hoodie.html">Hoodie</a>
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        Men
+                     </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                     <div class="accordion-body">
+                        <a href="hoodie.html">Hoodie</a>
+                     </div>
+                     <div class="accordion-body">
+                        <a href="jogger.html">Joggers</a>
+                     </div>
+                     <div class="accordion-body">
+                        <a href="shoes.html">Shoes</a>
+                     </div>
                   </div>
-                  <div class="accordion-body">
-                     <a href="jogger.html">Joggers</a>
+               </div>
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Women
+                     </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                     <div class="accordion-body">
+                        <a href="kurti.html">Kurti</a>
+                     </div>
+                     <div class="accordion-body">
+                        <a href="shoes.html">Shoes</a>
+                     </div>
                   </div>
-                  <div class="accordion-body">
-                     <a href="shoes.html">Shoes</a>
+               </div>
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        More
+                     </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                     <div class="accordion-body">
+                        <a href="about.html">About Us</a>
+                     </div>
+                     <div class="accordion-body">
+                        <a href="blog.html">Lookbook</a>
+                     </div>
+                     <div class="accordion-body">
+                        <a href="about.html">Our Story</a>
+                     </div>
+                     <div class="accordion-body">
+                        Track My Order
+                     </div>
+                     <div class="accordion-body">
+                        Returns & Refunds
+                     </div>
+                     <div class="accordion-body">
+                        Cancellation Policy
+                     </div>
+                     <div class="accordion-body">
+                        Terms & Conditions
+                     </div>
                   </div>
                </div>
             </div>
-            <div class="accordion-item">
-               <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                     aria-controls="panelsStayOpen-collapseTwo">
-                     Women
-                  </button>
-               </h2>
-               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                     <a href="kurti.html">Kurti</a>
-                  </div>
-                  <div class="accordion-body">
-                     <a href="shoes.html">Shoes</a>
-                  </div>
-               </div>
+            <div class="item px-3 py-4">
+               <a href="contact.html">Contact</a>
             </div>
-            <div class="accordion-item">
-               <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                     aria-controls="panelsStayOpen-collapseThree">
-                     More
-                  </button>
-               </h2>
-               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                     <a href="about.html">About Us</a>
-                  </div>
-                  <div class="accordion-body">
-                     <a href="blog.html">Lookbook</a>
-                  </div>
-                  <div class="accordion-body">
-                     <a href="about.html">Our Story</a>
-                  </div>
-                  <div class="accordion-body">
-                     Track My Order
-                  </div>
-                  <div class="accordion-body">
-                     Returns & Refunds
-                  </div>
-                  <div class="accordion-body">
-                     Cancellation Policy
-                  </div>
-                  <div class="accordion-body">
-                     Terms & Conditions
-                  </div>
-               </div>
+            <div class="item px-3 py-4">
+               <a href="contact.html">Customer Support</a>
+            </div>
+            <div class="item px-3 py-4 d-flex justify-content-around fs-1">
+               <a href="#"></a><i class="fa-brands fa-instagram"></i>
+               <a href="#"></a><i class="fa-brands fa-facebook"></i>
+               <a href="#"></a><i class="fa-brands fa-twitter"></i>
+               <a href="#"></a><i class="fa-brands fa-pinterest"></i>
             </div>
          </div>
-         <div class="item px-3 py-4">
-            <a href="contact.html">Contact</a>
-         </div>
-         <div class="item px-3 py-4">
-            <a href="contact.html">Customer Support</a>
-         </div>
-         <div class="item px-3 py-4 d-flex justify-content-around fs-1">
-            <a href="#"></a><i class="fa-brands fa-instagram"></i>
-            <a href="#"></a><i class="fa-brands fa-facebook"></i>
-            <a href="#"></a><i class="fa-brands fa-twitter"></i>
-            <a href="#"></a><i class="fa-brands fa-pinterest"></i>
-         </div>
-      </div>
 
+      </div>
+      <div class="kabum"></div>
    </div>
 
-   <div class="kabum"></div>
-   
+   <div class="bag-items-container"></div>
+
    <section id="footer" class="section-p1 d-flex">
       <div class="col-12 col-md-4">
          <h4 class="contact">Contact</h4>
