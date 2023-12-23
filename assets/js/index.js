@@ -1,28 +1,15 @@
-let bagItems;
-
-let bagItemsStr = localStorage.getItem('bagItems');
-bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
-
-displayBagItems();
+let bagItemCount = document.querySelector('.bag-item-count') || console.error("Element with class 'bag-item-count' not found.");
+let bagItems = [];
 
 function addToBag(productId) {
    bagItems.push(productId);
    localStorage.setItem('bagItems', JSON.stringify(bagItems));
-   displayBagItems();
+   updateBagCount();
 }
 
-function displayBagItems() {
-   let bagItemCount = document.querySelector('.bag-item-count');
-   if (bagItemCount) {
-      if (bagItems.length > 0) {
-         bagItemCount.style.visibility = 'visible';
-         bagItemCount.innerText = bagItems.length;
-      } else {
-         bagItemCount.style.visibility = 'hidden';
-      }
-   } else {
-      console.error("Element with class 'bag-item-count' not found.");
-   }
+function updateBagCount() {
+   bagItemCount.innerText = bagItems.length;
+   bagItemCount.style.visibility = bagItems.length > 0 ? 'visible' : 'hidden';
 }
 
 
